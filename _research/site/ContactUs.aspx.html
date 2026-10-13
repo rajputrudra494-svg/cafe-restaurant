@@ -1,0 +1,1270 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <style>
+        /*#right {
+            position: absolute;
+            top: 2000px;
+        }
+
+        #video1 {
+            position: absolute;
+            left: 2000px;
+            top: 2000px;
+        }
+
+        #video2 {
+            position: absolute;
+            left: 2000px;
+            top: 3000px;
+        }*/
+
+        .explore {
+            border: 1px solid #fff;
+            padding: 10px;
+            color: #fff !important;
+            transition: all ease-in-out 0.3s;
+        }
+
+            .explore:hover {
+                background-color: #fff;
+                color: #000 !important;
+            }
+
+        .our-projects .filter-tabs li {
+            color: #202e31;
+            cursor: pointer;
+            float: left;
+            font-family: "Raleway",sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            margin: 0 8px 8px 0;
+            padding: 4px 25px;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .about p {
+            font-size: 15px !important;
+            text-align: center !important;
+        }
+
+        .our-projects .filter-tabs li::before {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border: 1px solid #f1f1f1;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: -1px;
+            transform: skewX(-15deg);
+            width: 100%;
+            z-index: 0;
+        }
+
+        .our-projects .filter-tabs li:hover::before, .our-projects .filter-tabs li.active::before {
+            background: #ec6e6e none repeat scroll 0 0;
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .our-projects .filter-tabs li:hover, .our-projects .filter-tabs li.active {
+            color: #ffffff;
+        }
+
+        .our-projects .filter-tabs li .btn-txt {
+            position: relative;
+            z-index: 1;
+        }
+
+        .our-projects .projects-container {
+            position: relative;
+        }
+
+        .our-projects .project-box {
+            display: none;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.7s ease 0s;
+            width: 25%;
+        }
+
+            .our-projects .project-box .image {
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+
+                .our-projects .project-box .image img {
+                    display: block;
+                    height: auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .our-projects .project-box .image .zoom-icon {
+                    background: rgba(32, 46, 49, 0.85) url("../images/icons/icon-plus.png") no-repeat scroll center 40%;
+                    height: 100%;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: -100%;
+                    transition: all 700ms ease 0s;
+                    width: 100%;
+                    z-index: 1;
+                }
+
+            .our-projects .project-box:hover .image .zoom-icon {
+                opacity: 1;
+                top: 0;
+            }
+
+            .our-projects .project-box .text-content {
+                background: #ffffff none repeat scroll 0 0;
+                border-top: 4px solid #ec6e6e;
+                bottom: -20%;
+                height: 42%;
+                left: 0;
+                padding: 0 30px;
+                position: absolute;
+                text-align: right;
+                transform: skewY(-19deg);
+                width: 100.5%;
+                z-index: 5;
+            }
+
+        .our-projects.style-two .project-box .text-content {
+            background: rgba(255, 255, 255, 0.95) none repeat scroll 0 0;
+            bottom: -1px;
+            height: auto;
+            left: -33px;
+            padding: 22px 40px 22px 64px;
+            text-align: left;
+            transform: skewX(35deg);
+            width: 100%;
+        }
+
+            .our-projects.style-two .project-box .text-content.hvr-bounce-to-bottom::before {
+                background: #ec6e6e none repeat scroll 0 0;
+            }
+
+            .our-projects.style-two .project-box .text-content:hover .text {
+                color: #ffffff;
+            }
+
+        .our-projects .project-box .text-content .text {
+            color: #b9b9b9;
+            position: relative;
+            top: -10px;
+            transform: skewY(19deg);
+        }
+
+        .our-projects.style-two .project-box .text-content .text {
+            top: 0;
+            transform: skewX(-35deg);
+        }
+
+        .our-projects .project-box .text-content .text h4 {
+            color: #202e31;
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .iconBox{
+            color: white !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-info button, .footer-info button:hover {
+            background-color: #ED3237 !important;
+        }
+
+            .footer-info button:before, .footer-info .social li a.hvr-rectangle-out:before, .hvr-rectangle-out:before, .hvr-rectangle-out:before, .gallery-meta .sharethis .sharethis-icon, .navbar-toggle:focus .icon-bar {
+                background-color: #ED3237 !important;
+            }
+        .vertical-center {
+            margin: 0px 500px;
+        }
+    </style>
+    <link href="css/plug.css" rel="stylesheet" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/vendor/flickity.pkgd.min.js"></script>
+    
+ <script src="Scripts/angular.min.js"></script>
+<script src="component/contact/contact_controller.js"></script>
+<script src="component/contact/contact_service.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        iframe .bkgrnd {
+            background-color: transparent !important;
+        }
+
+        .iframeAlign {
+            width: 1000px !important;
+            height: 1000px !important;
+        }
+    </style>
+    <script src="js/jssor.slider-21.1.6.min.js"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideoTransitions = [
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 1000, x: -257, y: -5, o: 1 }],
+              [{ b: 480, d: 520, x: 120, y: -270 }],
+              [{ b: 1000, d: 500, y: 250 }, { b: 8000, d: 1000, x: 600 }],
+              [{ b: -1, d: 1, o: -1, sX: -0.6, sY: -0.6 }, { b: 1500, d: 500, o: 1, r: 360, sX: 0.6, sY: 0.6 }, { b: 8000, d: 1000, y: -150 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 2000, d: 1000, o: 1, tZ: 200 }, { b: 3000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 3000, d: 1000, o: 1, tZ: 200 }, { b: 4000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 4000, d: 1000, o: 1, tZ: 200 }, { b: 5000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 5000, d: 1000, o: 1, tZ: 200 }, { b: 6000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 6000, d: 1000, o: 1, tZ: 200 }, { b: 7000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 7000, d: 1000, o: 1, tZ: 200 }, { b: 8000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 5000, d: 1000, y: 100 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 1000, d: 1000, o: 1 }, { b: 5000, d: 1000, y: 280 }],
+              [{ b: 2000, d: 1000, y: 190, e: { y: 28 } }, { b: 5000, d: 1000, x: 280 }],
+              [{ b: 3000, d: 520, y: 50 }, { b: 5000, d: 1000, y: -50 }],
+              [{ b: 3520, d: 480, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4000, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4500, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 10000, d: 500, y: 90 }],
+              [{ b: -1, d: 1, c: { x: 150.0, t: -150.0 } }, { b: 1000, d: 1000, c: { x: -150.0, t: 150.0 } }, { b: 10000, d: 500, c: { y: 150.0, m: -150.0 } }],
+              [{ b: 2000, d: 500, x: 220 }],
+              [{ b: 3500, d: 500, rX: -20 }, { b: 4000, d: 1000, rX: 40 }, { b: 5000, d: 500, rX: -10 }, { b: 9500, d: 500, o: -1 }],
+              [{ b: 3500, d: 2000, r: 360 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, y: -80, o: 1 }],
+              [{ b: -1, d: 1, c: { x: 120.0, t: -120.0 } }, { b: 6100, d: 400, c: { x: -120.0, t: 120.0 } }, { b: 10000, d: 500, y: -120 }],
+              [{ b: 6500, d: 500, x: 220 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 7000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 8000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 8000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 9000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9500, d: 500, o: -1, r: 180, sX: 9, sY: 9 }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideEasing: $Jease$.$InOutSine,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions,
+                    $Breaks: [
+                      [{ d: 3000, b: 8000, t: 2 }],
+                      [{ d: 2000, b: 5000 }],
+                      [{ d: 3000, b: 9500, t: 2 }]
+                    ]
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        .bgform {
+            background: url('images/aboutbg.jpg') no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            height: 700px !important;
+        }
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('img/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+
+        function myMap() {
+            var locations = [];
+            $.ajax({
+                type: "POST",
+                url: "ContactUs.aspx/GetBranchDetail",
+                data: {},
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    data = JSON.parse(response.d);
+                    console.log(data[0]);
+                    locations = [
+                        ['<b style="color:black">Ps Delicacies</b><br/><p style="color:black">' + data[0].Address1.replace(/(?:\r\n|\r|\n)/g, '<br />') + '</p>', data[0].Latitude, data[0].Longitude, 1]
+                    ];
+
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 14,
+                        center: new google.maps.LatLng(21.143873, 73.091353),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        styles: [{ "stylers": [{ "hue": "#ff1a00" }, { "invert_lightness": true }, { "saturation": -100 }, { "lightness": 33 }, { "gamma": 0.5 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#2D333C" }] }],
+
+                    });
+
+                    var infowindow = new google.maps.InfoWindow();
+
+                    var marker, i;
+                    for (i = 0; i < locations.length; i++) {
+                        marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                            map: map,
+                            animation: google.maps.Animation.DROP,
+                            icon: {
+                                url: "../images/marker.png",
+                                scaledSize: new google.maps.Size(35, 50)
+                            }
+                        });
+                        marker.addListener('click', (function (marker, i) {
+                            return function () {
+                                if (marker.getAnimation() !== null) {
+                                    marker.setAnimation(null);
+                                } else {
+                                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                                }
+                            }
+                        })(marker, i));
+
+                        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                            return function () {
+                                infowindow.setContent(locations[i][0]);
+                                infowindow.open(map, marker);
+                                //marker.setAnimation(google.maps.Animation.BOUNCE);
+                            }
+                        })(marker, i));
+                    }
+                },
+                error: function (response) {
+
+                }
+            });
+
+            //var locations = [
+            //    ['<b style="color:black">Ps Delicacies</b><br/><p style="color:black">52, 53, 54 Sukan, Nr. Vidyabharti Collage,<br> Baben, Bardoli, Gujarat 394601</p>', 21.143873, 73.091353, 1]
+            //];
+
+            //var map = new google.maps.Map(document.getElementById('map'), {
+            //    zoom: 14,
+            //    center: new google.maps.LatLng(21.143873, 73.091353),
+            //    mapTypeId: google.maps.MapTypeId.ROADMAP,
+            //    styles: [{ "stylers": [{ "hue": "#ff1a00" }, { "invert_lightness": true }, { "saturation": -100 }, { "lightness": 33 }, { "gamma": 0.5 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#2D333C" }] }],
+
+            //});
+
+            //var infowindow = new google.maps.InfoWindow();
+
+            //var marker, i;
+            //console.log("Callll");
+            //console.log(locations);
+            //for (i = 0; i < locations.length; i++) {
+            //    marker = new google.maps.Marker({
+            //        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            //        map: map,
+            //        animation: google.maps.Animation.DROP,
+            //        icon: {
+            //            url: "../images/marker.png",
+            //            scaledSize: new google.maps.Size(35, 50)
+            //        }
+            //    });
+            //    marker.addListener('click', (function (marker, i) {
+            //        return function () {
+            //            if (marker.getAnimation() !== null) {
+            //                marker.setAnimation(null);
+            //            } else {
+            //                marker.setAnimation(google.maps.Animation.BOUNCE);
+            //            }
+            //        }
+            //    })(marker, i));
+
+            //    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+            //        return function () {
+            //            infowindow.setContent(locations[i][0]);
+            //            infowindow.open(map, marker);
+            //            //marker.setAnimation(google.maps.Animation.BOUNCE);
+            //        }
+            //    })(marker, i));
+            //}
+        }
+
+    </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/color/default.css" />
+    <link href="socialmedia/css/style.css" rel="stylesheet" />
+    <link href="Slider/css/custom.css" rel="stylesheet" />
+    <link href="Slider/css/style.css" rel="stylesheet" />
+    
+    <script src="Slider/js/modernizr.custom.79639.js"></script>
+    <link href="Main/style.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="img/favicon(7).ico" />
+    <title>Contact Us | PS Delicacies</title>
+    <script type="text/javascript">
+        var process = jQuery.noConflict();
+        process(document).on("click", "#btnEnquiry", function (e) {
+            if (Page_IsValid) {
+                document.getElementById('btnEnquiry').value = "Processing";
+                //document.getElementById('btnEnquiry').className = "";
+                var button = this;
+
+                setTimeout(function () {
+                    process(button).attr('disabled', 'disabled');
+                }, 10);
+            }
+            else {
+                process(button).attr('disabled', '');
+            }
+        });
+    </script>
+</head>
+<body class="page " style="background: url('images/bg-cc.jpg');" ng-app="app" ng-controller="contact_controller">
+    
+    <div class="preloader"></div>
+    
+<script src="../js/jquery-latest.js"></script>
+<style type="text/css">
+    /* Importing Amaranth Font for menu text */
+    @import url(http://fonts.googleapis.com/css?family=Amaranth);
+
+    header, a, img, li {
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari and Chrome */
+        -o-transition: all 1s; /* Opera */
+    }
+
+        img.logo {
+            float: left;
+        }
+    nav {
+        margin: 0 auto;
+    }
+
+    section.stretch {
+        float: left;
+        width: 100%;
+    }
+
+
+
+    header {
+        background-color: transparent;
+        float: left;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+
+        header li {
+            margin-right: 30px;
+        }
+
+        /* Sizes for the bigger menu */
+        header.large {
+            height: 120px;
+        }
+
+        header.small ul {
+            position: relative;
+            top: 0;
+        }
+
+        header.large img {
+            /*width: 489px;
+                height: 113px;*/
+        }
+
+        header.large li {
+            /*top: -55px;*/
+        }
+
+
+        /* Sizes for the smaller menu */
+        header.small {
+            height: 80px;
+            background: rgba(0,0,0,0.8);
+        }
+
+            header.small img {
+                width: 125px;
+            }
+
+            header.small .on img {
+                width: 50px;
+                /*height: 69px;*/
+                margin-top: -15px;
+            }
+
+            header.small li {
+                /*top: -25px;*/
+            }
+
+                header.small li a {
+                    font-size: 14px !important;
+                }
+
+    ul#mob_navs {
+        background-color: #ed3237;
+        transition: all .5s;
+        border-radius:50px;
+        color:#f8be2a;
+    }
+
+
+        ul#mob_navs a {
+            font-size: 18px;
+            color: #ed3237;
+            transition: all .5s;
+        }
+
+            ul#mob_navs a:hover {
+                background-color: #ed3237;
+                color: #f8be2a !important;
+                transform: scale(1.3);
+            }
+</style>
+
+<script type="text/javascript">
+    var sma = jQuery.noConflict();
+
+    sma(document).on("scroll", function () {
+        if (sma(document).scrollTop() > 100) {
+            sma("header").removeClass("large").addClass("small");
+        }
+        else {
+            sma("header").removeClass("small").addClass("large");
+        }
+    });
+</script>
+
+<header class="main-header style-one large">
+    <!-- Header Top -->
+    
+    
+    <!-- Search Box -->
+
+
+    <!-- Header Lower -->
+    <nav>
+        <div class="header-lower">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="../Default.aspx">
+                        <img src="img/logo.png" width="160" alt="Bulldozer" title="Bulldozer"></a>
+                </div>
+                
+                <!--Right Container-->
+                <div class="right-cont clearfix">
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix erasorfont padding-r-xs-none">
+                            <ul class="nav navbar-nav navbar-right" style="margin: 0 !important">
+                                
+                                <li class=""><a href="../Default.aspx" id="home_active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                                <li class=""><a href="../AboutUs.aspx" id="about_active"><i class="fa fa-eercast" aria-hidden="true"></i>About Us</a></li>
+                                <li><a href="../psmenu.aspx" id="pizza_menu_active"><i class="fa fa-list-alt" aria-hidden="true"></i>Menu</a></li>
+                                
+                                <li class=""><a href="../Highlights.aspx" id="highlights_active"><i class="fa fa-star" aria-hidden="true"></i>Highlights</a></li>
+                                <li class=""><a href="../HappyMoments.aspx" id="happymoments_active"><i class="fa fa-smile-o" aria-hidden="true"></i>Happy Moments</a>
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                </li>
+                                
+                                
+                                <li><a href="../ContactUs.aspx" id="contactus_active"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+
+            </div>
+
+        </div>
+       
+    </nav>
+</header>
+<ul id="mob_navs" data-open="close" data-close="Open" class="hidden-lg hidden-md hidden-sm">
+    <li><a href="../ContactUs.aspx"><i class="fa fa-map-marker"></i></a></li>
+    <li><a href="../Menu.aspx"><i class="fa fa-list-alt"></i></a></li>
+    <li><a href="../HappyMoments.aspx"><i class="fa fa-smile-o"></i></a></li>
+    <li><a href="../review_order.aspx"><i class="fa fa-shopping-cart"></i></a></li>
+    <li><a href="../Default.aspx"><i class="fa fa-home"></i></a></li>
+</ul>
+<script src="../js/jquery.js"></script>
+<script>
+    $(".preloader").bind({
+        ajaxStart: function () { $(this).show(); },
+        ajaxStop: function () { $(this).hide(); }
+    });
+
+    var jqueryObj = $;
+    jqueryObj(function () {
+        var ul = jqueryObj("#mob_navs"), li = jqueryObj("#mob_navs li"), i = li.length, n = i - 1, r = 120;
+        ul.click(function () {
+            jqueryObj(this).toggleClass('active');
+            if (jqueryObj(this).hasClass('active')) {
+                for (var a = 0; a < i; a++) {
+                    li.eq(a).css({
+                        'transition-delay': "" + (50 * a) + "ms",
+                        '-webkit-transition-delay': "" + (50 * a) + "ms",
+                        'left': (-r * Math.cos(90 / n * a * (Math.PI / 180))),
+                        'top': (-r * Math.sin(90 / n * a * (Math.PI / 180)))
+                    });
+                }
+            } else {
+                li.removeAttr('style');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+   
+    
+    <div class="main" id="mainUiPage">
+        
+        <section class="item" id="SectionTemp2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-none">
+                        <img src="images/Contact-Us.jpg" class="top_all_banner" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="latest" class="section latest padding-15-xs margin-t-80-sm">
+            <div class="container padding-none-xs padding-none-sm" style="padding-top: 50px;">
+               
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <h2 class="title line-title text-center">Reach Us<i class="fa fa-square"></i></h2>
+                        
+                      
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center-xs branchise" ng-repeat="x in BranchDetails">
+                                    <aside class="widget">
+                                        <h3 class="title foottiitle" style="color: #ed3237 !important;text-align:left;">{{x.BranchName}} {{x.Type==4?'':x.Type==1?'(Head Office)':x.Type==2?'(Franchise)':''}}</h3>
+                                        <div class="widget-content" style="font-size: 12px !important;">
+                                            <ul>
+                                                <li class="text-left" style="cursor: pointer;">{{x.Address1}}</li>
+                                                <li class="text-left" style="cursor: pointer;">{{x.Address2}}</li>
+                                                <li class="text-left" style="cursor: pointer;">{{x.Address3}}</li>
+                                                <li class="text-left" style="cursor: pointer;">Email: <a href="mailto:{{x.EmailId}}">{{x.EmailId}}</a></li>
+                                                <li class="text-left" style="cursor: pointer;">Phone No: <a href="tel:{{x.ContactNo}}" class="margin-t-10" style="cursor: pointer;">{{x.ContactNo}} </a>, <a href="tel:{{x.ContactNo2}}" class="margin-t-10" style="cursor: pointer;">{{x.ContactNo2}}</a> </li>
+                                                
+                                                <li class="text-left margin-t-15"  style="cursor: pointer;"><a href="https://www.google.com/maps/search/?api=1&query={{x.Address1}}{{x.Address2}}{{x.Address3}}" target="_blank" class="getDirection">Get Directions</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                        
+                  </div>
+                </div>
+            
+                </div>
+        </section>
+        <section id="latest1" class="section latest padding-15-xs margin-t-80-sm"
+            style="background-position: right top; background-repeat: no-repeat;">
+            <div class="container padding-none-xs padding-none-sm" style="padding-top: 50px;">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <h2 class="title line-title text-center">Get In Touch<i class="fa fa-square"></i></h2>
+                        
+                        <form method="post" action="./ContactUs.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="frmEnquiry">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="aRZ37oEuLCircoz2X7Jh5o1LEH0/VSk2J4kf0NeTkpCHgGH3YADqlr0sQcdqspxp6QjSbqaI8rDGxrUbFLCyR6oaNuoQCzuRm0qd/UzN95Q=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmEnquiry'];
+if (!theForm) {
+    theForm = document.frmEnquiry;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOa9wcyrn7ZQHHwIkNY-Re5fh8_v0EK-ktpcWfEBTjNrf9nug9_1FF8g-znhRP3i2g2&amp;t=638901739900000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=1HpV3OVB0CaEXoaafcqmhjneWJEthfUEfLiXN_FPcoRNVHHZLiGYzwE-tpdVnma9uJ2Obr1vnIvIgva42C5zYmTZLTMbkBmoBpD6mo7l0z_kb-6Gg17ZRvULykk4Bdk6UvXkSJ8GXZA8yhqFnl3FUw2&amp;t=7f7f23e2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yLbiIvqbrEtCFp92O5XN1E4X8GF8lAW1o79F365puTW25mwowt6CM_eXw90U1ktYJDuGLCyiP-JOdJjwgfIC1-E_vF5GAbdRDqrF-pk_AhoEZoB4J3LleN0Sull24jGgCmJEGQadP5bGFYrSP9jBn201&amp;t=5c0e0825" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadIkRRO25Am7o8JeOtQmG872EcsUkepkQDHwttX_lgzGLkVgiUACayKuWSz1CJzwXGABjeOvUTt5AHV42ugs5ba7ij1rDVnaKXwiSbY7pUkA3NqVUto-Fp-nASHjqYK8ZKkRI4UQv-piOYX99mVUmU5M1&amp;t=5c0e0825" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="46798EB0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="3FpYM9U3L7c+kLPp96ur9R9nRoZm91/27M1fU6v7seKWcEY+O2Atv4VoRR8vAFDE6ZLNlf+Uqx2spO3nIsvTrZhwz6vHwFMU5X96PbNSdeNZLxnQM3LdYUe/wuqmENnPdA3D7N40SWuf32oNh/+pusb9OguJoqlV5sRBw6M3B0rpOayFij5z7x2pBT+MwrSmfKdfqQueytii0pJI8S41pg==" />
+</div>
+                            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('scr1', 'frmEnquiry', ['tup1','up1'], [], [], 90, '');
+//]]>
+</script>
+
+
+                            <div id="up1">
+	
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                        <h3 class="text-left margin-b-20 text-center-xs text-center-sm margin-t-20-xs hidden-lg hidden-md margin-t-80-sm title line-title">Reach Us<i class="fa fa-square"></i></h3>
+                                        <h3 class="text-left margin-b-20 text-center-xs text-center-sm margin-t-20-xs hidden-xs hidden-sm ">Reach Us</h3>
+                                        <div class="form-group col-md-6 padding-l-0">
+                                            <label for="comment" class="float-left">
+                                                Your Name &nbsp;
+                                        <span id="reqName" style="color:Red;display:none;">*</span>
+                                            </label>
+                                            <input name="txtName" type="text" id="txtName" class="custometxtbox custtext_box margin-tb-10-xs" placeholder="Enter Your Name" />
+                                            
+                                        </div>
+                                        <div class="form-group col-md-6 padding-r-0">
+                                            <label for="comment" class="float-left">
+                                                Your Email &nbsp;
+                                        <span id="reqEmail" style="color:Red;display:none;">*</span>
+                                                <span id="regexEmailValid" style="color:Red;visibility:hidden;">Invalid Email Id</span>
+                                            </label>
+                                            <input name="txtEmailId" type="text" id="txtEmailId" class="custtext_box custometxtbox margin-tb-10-xs" placeholder="Enter Your Email" />
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment" class="float-left">
+                                                What Are You Interested In?
+                                        &nbsp;
+                                        <span id="ReqIntrestedIn" style="color:Red;display:none;">*</span>
+                                            </label>
+                                            <input name="txtIntrestedIn" type="text" id="txtIntrestedIn" class="custtext_box custometxtbox margin-tb-10-xs" placeholder="Tell Us What Are You Interesetd In" />
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment" class="float-left">Your Message</label>
+                                            <textarea name="txtMessage" rows="2" cols="20" id="txtMessage" class="custtext_box custometxtbox margin-tb-10-xs" placeholder="Write A Message">
+</textarea>
+                                            
+                                        </div>
+
+                                        
+                                        <input type="submit" name="btnEnquiry" value="Send" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnEnquiry&quot;, &quot;&quot;, true, &quot;Send&quot;, &quot;&quot;, false, false))" id="btnEnquiry" class="newbtn float-left float-none-xs vertical-center" />
+                                    </div>
+                                
+</div>
+                        
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("reqName"), document.getElementById("reqEmail"), document.getElementById("regexEmailValid"), document.getElementById("ReqIntrestedIn"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var reqName = document.all ? document.all["reqName"] : document.getElementById("reqName");
+reqName.controltovalidate = "txtName";
+reqName.focusOnError = "t";
+reqName.errormessage = "*";
+reqName.display = "Dynamic";
+reqName.validationGroup = "Send";
+reqName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+reqName.initialvalue = "";
+var reqEmail = document.all ? document.all["reqEmail"] : document.getElementById("reqEmail");
+reqEmail.controltovalidate = "txtEmailId";
+reqEmail.focusOnError = "t";
+reqEmail.errormessage = "*";
+reqEmail.display = "Dynamic";
+reqEmail.validationGroup = "Send";
+reqEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+reqEmail.initialvalue = "";
+var regexEmailValid = document.all ? document.all["regexEmailValid"] : document.getElementById("regexEmailValid");
+regexEmailValid.controltovalidate = "txtEmailId";
+regexEmailValid.errormessage = "Invalid Email Id";
+regexEmailValid.validationGroup = "Send";
+regexEmailValid.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+regexEmailValid.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var ReqIntrestedIn = document.all ? document.all["ReqIntrestedIn"] : document.getElementById("ReqIntrestedIn");
+ReqIntrestedIn.controltovalidate = "txtIntrestedIn";
+ReqIntrestedIn.focusOnError = "t";
+ReqIntrestedIn.errormessage = "*";
+ReqIntrestedIn.display = "Dynamic";
+ReqIntrestedIn.validationGroup = "Send";
+ReqIntrestedIn.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ReqIntrestedIn.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('reqName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('reqName'));
+}
+
+document.getElementById('reqEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('reqEmail'));
+}
+
+document.getElementById('regexEmailValid').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('regexEmailValid'));
+}
+
+document.getElementById('ReqIntrestedIn').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ReqIntrestedIn'));
+}
+//]]>
+</script>
+</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="item padding-none-xs " style="height: auto !important;">
+            
+<style>
+    footer{
+         font-family: 'ubunturegular',Raleway,sans-serif;
+    }
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        footer#footer ul {
+            margin: 0;
+            padding: 0;
+            zoom: 1;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+</style>
+<footer id="footer" style="color: #fff !important;" class="padding-none-xs padding-none-sm">
+    <div class="footer-info" style="color: #fff !important;">
+       
+        <div class="container">
+            <div class="pull-left" style="width: 100%; padding-top: 50px;">
+               
+                               
+                                
+                                
+                                
+                                
+                           
+                
+                
+                
+               
+               
+                               
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright margin-t-0-xs margin-b-20 text-center-xs">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 footerdivide">
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    Copyright &copy; 2018 <a href="#">P'S Delicacies</a>. All Rights Reserved.
+                </p>
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.facebook.com/PSdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-facebook-f "></i></a>
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.instagram.com/psdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-instagram"></i></a>
+                </p>
+                <p style="color: #fff !important;" class="float-right float-none-xs">
+                    Developed By <a href="http://www.gatisofttech.com/" target="_blank">Gatisofttech</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+        </section>
+    </div>
+</body>
+
+<script src="socialmedia/js/jquery-1.11.2.min.js"></script>
+
+
+<script src="socialmedia/js/jquery.appear.js"></script>
+<!--<script src="js/device.min.js"></script>-->
+<!--<script src="js/jquery.browser.min.js"></script>-->
+<!--<script src="js/tablesaw.js"></script>-->
+<!--<script src="owl/owl.carousel.min.js"></script>-->
+<script src="socialmedia/js/moment.min.js"></script>
+<script src="socialmedia/js/codebird.js"></script>
+<script src="socialmedia/js/social-widgets/social-widgets.js"></script>
+
+<script src="socialmedia/js/ct-mediaSection/jquery.stellar.min.js"></script>
+<script src="socialmedia/js/main.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/revolution.min.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+
+ 
+<script src="Slider/js/jquery.ba-cond.min.js"></script>
+<script src="Slider/js/jquery.slitslider.js"></script>
+<script type="text/javascript">
+    var sl = jQuery.noConflict();
+    sl(function () {
+
+        var Page = (function () {
+
+            var slnavArrows = sl('#nav-arrows'),
+                slnav = sl('#nav-dots > span'),
+                slitslider = sl('#slider').slitslider({
+                    onBeforeChange: function (slide, pos) {
+
+                        slnav.removeClass('nav-dot-current');
+                        slnav.eq(pos).addClass('nav-dot-current');
+
+                    }
+                }),
+
+                init = function () {
+
+                    initEvents();
+
+                },
+                initEvents = function () {
+
+                    // add navigation events
+                    slnavArrows.children(':last').on('click', function () {
+
+                        slitslider.next();
+                        return false;
+
+                    });
+
+                    slnavArrows.children(':first').on('click', function () {
+
+                        slitslider.previous();
+                        return false;
+
+                    });
+
+                    slnav.each(function (i) {
+
+                        sl(this).on('click', function (event) {
+
+                            var sldot = sl(this);
+
+                            if (!slitslider.isActive()) {
+
+                                slnav.removeClass('nav-dot-current');
+                                sldot.addClass('nav-dot-current');
+
+                            }
+
+                            slitslider.jump(i + 1);
+                            return false;
+
+                        });
+
+                    });
+
+                };
+
+            return { init: init };
+
+        })();
+
+        Page.init();
+
+        /**
+         * Notes: 
+         * 
+         * example how to add items:
+         */
+
+        /*
+        
+        var slitems  = sl('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+        
+        // call the plugin's add method
+        ss.add(slitems);
+
+        */
+
+    });
+</script>
+
+<script src="js/jquery.inview.min.js"></script>
+
+
+<script src="js/jquery.touchSwipe.js"></script>
+<script src="js/plugin.min.js"></script>
+<script>
+    var trying = jQuery.noConflict();
+    trying(document).ready(function () {
+        var height_window = $(window).height();
+        trying("#fw_al_003").css("max-height", height_window);
+        trying("#jssor_1").css("max-height", height_window);
+        trying("#services").css("height", height_window);
+        trying("#video_096").css("max-height", height_window);
+        trying("#fw_il_016").css("max-height", height_window);
+        trying("#fw_il_016").css("height", height_window);
+        trying("#video_096_img").css("max-height", height_window);
+        trying("#video_096_img").css("height", height_window);
+        //trying("#position_giving_temp1").css("position", "fixed");
+        //trying("#position_giving_temp1").css("bottom", "200px");
+        trying(".fw_al_003_slide > a").css("position", "relative");
+        if ($(window).width() <= 1400) {
+            trying(".fw_al_003_slide > a").css("bottom", "20px");
+        } else {
+            trying(".fw_al_003_slide > a").css("bottom", "-200px");
+        }
+        if ($(window).width() <= 980) {
+            //alert("hello");
+            $('#mainUiPage').contents().unwrap();
+            $('section').css("top", "");
+            $('#services').css("height", "");
+            //$('.services500-sm').css("height", "500px");
+            $('.navbar-collapse.collapse').css("display", "none !Important");
+        }
+        if ($(window).width() >= 768 && $(window).width() <= 980) {
+            $('.services500-sm').css("height", "500px");
+        }
+
+        if ($(window).width() >= 980) {
+            $('.top_all_banner').css("height", height_window);
+        }
+    })
+    trying(document).ready(function () {
+        trying('#contactus_active').addClass('activepage');
+    })
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGmv_nYvXauqQp9EfDgwAdjttGxaYBB5c&callback=myMap"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            setTimeout(() => {
+                var branchiseLen = jQuery('.branchise').length;
+                var colClass = '';
+                jQuery('.branchise').removeClass('col-xs-12');
+                jQuery('.branchise').removeClass('col-sm-3');
+                jQuery('.branchise').removeClass('col-md-3');
+                jQuery('.branchise').removeClass('col-lg-3');
+                if (branchiseLen == 1) {
+                    colClass = 'col-md-12 col-sm-12 col-xl-12 col-xs-12';
+                } else if (branchiseLen == 2) {
+                    colClass = 'col-md-6 col-sm-6 col-xl-6 col-xs-12';
+                } else if (branchiseLen == 3) {
+                    colClass = 'col-md-4 col-sm-4 col-xl-4 col-xs-12';
+                } else if (branchiseLen == 4) {
+                    colClass = 'col-md-3 col-sm-3 col-xl-3 col-xs-12';
+                } else {
+                    colClass = 'col-md-3 col-sm-3 col-xl-3 col-xs-12';
+                }
+                jQuery('.branchise').addClass(colClass);
+                    var allLi = jQuery('.branchise ul li');
+                    allLi.each(function(idx, li) {
+                        var element = $(li);
+
+                        if (element.text() == '') {
+                            element.css('height', '20px');
+                        }
+                    });
+                
+            }, 200);
+             
+        });
+     
+    </script>
+</html>
+

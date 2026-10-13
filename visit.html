@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" class="has-motion">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit us — P'S Delicacies, Vesu &amp; Bardoli</title>
+<meta name="description" content="Two kitchens: Shop G-3, International Wealth Center, VIP Road, Vesu, Surat, and 52-59 Suken Residency, Baben, Bardoli. Maps, phone numbers and the questions people actually ask.">
+<meta name="theme-color" content="#1b1716">
+<link rel="icon" href="assets/brand/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=Caveat:wght@500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  try {
+    if (sessionStorage.getItem('ps-seen')) document.documentElement.classList.add('seen');
+    if (sessionStorage.getItem('ps-transition')) {
+      document.documentElement.classList.add('transitioning', 'seen');
+      sessionStorage.removeItem('ps-transition');
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="loader" aria-hidden="true">
+  <img class="loader__mark" src="assets/brand/mark.svg" alt="">
+  <p class="loader__note">firing up the oven…</p>
+</div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark"></span></div>
+
+<header class="nav" data-nav>
+  <a class="nav__logo" href="index.html" aria-label="P'S Delicacies, home">
+    <img class="nav__mark" src="assets/brand/mark.svg" alt="" width="42" height="42">
+    <img class="nav__word" src="assets/brand/wordmark.svg" alt="P'S Delicacies" width="150" height="14">
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="builder.html">Build your own</a>
+    <a href="story.html">Our story</a>
+    <a href="visit.html" aria-current="page">Visit</a>
+  </nav>
+  <a class="nav__call" href="tel:+919537246200">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.2 1l-2.3 2.1Z"/></svg>
+    <span>95372 46200</span>
+  </a>
+  <button class="nav__burger" type="button" data-burger aria-expanded="false" aria-label="Open menu" aria-controls="drawer"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" data-drawer aria-hidden="true">
+  <nav aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="builder.html">Build your own</a>
+    <a href="story.html">Our story</a>
+    <a href="visit.html" aria-current="page">Visit</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+919537246200">95372 46200</a>
+    <a href="tel:+918980918008">89809 18008</a>
+    <a href="mailto:palskits14u@gmail.com">palskits14u@gmail.com</a>
+    <span>Vesu, Surat · Baben, Bardoli</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="phero dark" data-intro>
+    <svg class="steel" data-grid aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="phero__inner">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Visit</span></p>
+          <h1 class="h1 h1--light" data-split><span class="line">Two rooms,</span><span class="line">one <em>oven</em> each</span></h1>
+          <p class="phero__lede" data-hero-fade>Surat and Bardoli, about an hour apart. Same pizza, same red boxes, same chef statue watching the door.</p>
+        </div>
+        <div class="phero__media" data-hero-fade>
+          <div class="phero__photo">
+            <img src="assets/ig/ig03.webp" alt="Inside the Surat store" width="512" height="640">
+          </div>
+          <p class="scribble">
+            <span>come early,<br>it fills up</span>
+            <svg viewBox="0 0 90 60" aria-hidden="true"><path d="M84 8C62 6 30 18 10 48"/><path d="M12 32l-4 18 18-2"/></svg>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight concrete">
+    <div class="wrap">
+      <div class="visit__grid">
+        <div>
+          <p class="eyebrow">Pick a kitchen</p>
+          <div class="loc" role="tablist" aria-label="Our two locations">
+            <button class="loc__card is-active" type="button" data-loc="surat" role="tab" aria-selected="true" id="surat">
+              <span class="loc__tag">Newest</span>
+              <span class="loc__city">Surat</span>
+              <span class="loc__addr">Shop No. G-3, International Wealth Center, VIP Road, Vesu, Surat 395007</span>
+            </button>
+            <button class="loc__card" type="button" data-loc="bardoli" role="tab" aria-selected="false" id="bardoli">
+              <span class="loc__tag loc__tag--old">Where it began</span>
+              <span class="loc__city">Bardoli</span>
+              <span class="loc__addr">52-59 Suken Residency, Baben, Bardoli, Gujarat 394601</span>
+            </button>
+          </div>
+
+          <ul class="contact">
+            <li><span>Phone</span><span><a href="tel:+919537246200">95372 46200</a> · <a href="tel:+918980918008">89809 18008</a></span></li>
+            <li><span>WhatsApp</span><span><a href="https://wa.me/919537246200" rel="noopener" target="_blank">Send us your order</a></span></li>
+            <li><span>Email</span><span><a href="mailto:palskits14u@gmail.com">palskits14u@gmail.com</a></span></li>
+            <li><span>Social</span><span><a href="https://www.instagram.com/psdelicacies/" rel="noopener" target="_blank">@psdelicacies</a> · <a href="https://www.facebook.com/PSdelicacies" rel="noopener" target="_blank">Facebook</a></span></li>
+            <li><span>Timings</span><span>We'd rather not print hours that drift — give either store a ring and we'll tell you exactly.</span></li>
+          </ul>
+
+          <div class="visit__actions">
+            <a class="btn btn--red" data-directions href="https://www.google.com/maps/search/?api=1&amp;query=International+Wealth+Center+VIP+Road+Vesu+Surat+395007" rel="noopener" target="_blank" data-magnetic>Get directions</a>
+            <a class="btn btn--ink" href="tel:+919537246200">Call this store</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="map">
+            <iframe data-map-frame title="Map to P'S Delicacies" src="https://maps.google.com/maps?q=International%20Wealth%20Center%2C%20VIP%20Road%2C%20Vesu%2C%20Surat%20395007&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="script visit__note">parking is easier on the service road</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true" data-marquee>
+    <div class="marquee__track">
+      <span>VESU, SURAT</span><i></i>
+      <span>BABEN, BARDOLI</span><i></i>
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>PURE VEG</span><i></i>
+      <span>VESU, SURAT</span><i></i>
+      <span>BABEN, BARDOLI</span><i></i>
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>PURE VEG</span><i></i>
+    </div>
+  </div>
+
+  <section class="section concrete" id="faq">
+    <div class="wrap">
+      <div class="split split--top">
+        <div>
+          <p class="eyebrow">Before you ask</p>
+          <h2 class="h2" data-split><span class="line">Questions we</span><span class="line">get <em>daily</em></span></h2>
+          <p class="body-copy intro-copy" data-reveal>If yours isn't here, the phone is the fastest way. Someone at the counter will know.</p>
+          <p class="script" style="color:var(--red-deep);margin-top:18px">or just turn up, that works too</p>
+        </div>
+
+        <div class="faq" data-stagger>
+          <details open>
+            <summary>Is everything really vegetarian?</summary>
+            <p>Yes — the whole menu, both stores, since 2013. The “sausage” and “pepperoni” on the topping list are vegetarian versions.</p>
+          </details>
+          <details>
+            <summary>Can I get it Jain?</summary>
+            <p>A lot of the menu can be made Jain, and those items carry a green <b>J</b> on the menu page. Tell us when you order and the kitchen leaves out what it needs to.</p>
+          </details>
+          <details>
+            <summary>What are your timings?</summary>
+            <p>They move around, so we don't publish them here rather than have you drive over on bad information. Call 95372 46200 or 89809 18008 and we'll tell you what's happening today.</p>
+          </details>
+          <details>
+            <summary>Do you deliver?</summary>
+            <p>Ring the store you want to order from and ask — it depends on where you are and how busy the oven is. You can also send the order on WhatsApp and we'll come back to you.</p>
+          </details>
+          <details>
+            <summary>How big are the pizzas?</summary>
+            <p>Four sizes: 10″ medium, 12″ large, 14″ extra large and 16″ jumbo, each cut into eight. A 16″ is genuinely a table's worth.</p>
+          </details>
+          <details>
+            <summary>Can you do a large order for a party?</summary>
+            <p>Yes, but give us some notice — call ahead with the number of pizzas and when you need them, and we'll plan the oven around it.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight dark">
+    <div class="wrap">
+      <div class="menu-cta">
+        <div>
+          <h3>Know what you want already?</h3>
+          <p>Send it over and we'll have it ready when you get here.</p>
+        </div>
+        <div class="menu-cta__btns">
+          <a class="btn btn--red" href="https://wa.me/919537246200" rel="noopener" target="_blank" data-magnetic>Order on WhatsApp</a>
+          <a class="btn btn--ghost" href="menu.html">Open the menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <p class="foot__big">Hungry<br><em>yet?</em></p>
+        <div class="hero__ctas">
+          <a class="btn btn--red" href="tel:+919537246200" data-magnetic>Call 95372 46200</a>
+          <a class="btn btn--ghost" href="visit.html">Find the store</a>
+        </div>
+      </div>
+      <div class="foot__cols">
+        <div>
+          <h4>Eat</h4>
+          <a href="menu.html">Full menu</a>
+          <a href="builder.html">Build your own</a>
+          <a href="menu.html#appetizers">Garlic breads</a>
+          <a href="menu.html#pasta">Pasta</a>
+        </div>
+        <div>
+          <h4>Us</h4>
+          <a href="story.html">Our story</a>
+          <a href="story.html#moments">Happy moments</a>
+          <a href="visit.html">Visit</a>
+          <a href="visit.html#faq">Questions</a>
+        </div>
+        <div>
+          <h4>Say hello</h4>
+          <a href="tel:+919537246200">95372 46200</a>
+          <a href="tel:+918980918008">89809 18008</a>
+          <a href="mailto:palskits14u@gmail.com">palskits14u@gmail.com</a>
+          <a href="https://www.instagram.com/psdelicacies/" rel="noopener" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/PSdelicacies" rel="noopener" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot__wall" aria-hidden="true">
+      <div class="emboss emboss--dark"><div class="emboss__word"></div></div>
+    </div>
+    <div class="foot__base">
+      <span>© <span data-year>2026</span> P'S Delicacies · Baben, Bardoli &amp; Vesu, Surat · pure vegetarian</span>
+      <span class="script">call ahead for timings, we pick up</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,784 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="Main/UIPageScrolling.js"></script>
+    <script type="text/javascript">
+
+        var ma = jQuery.noConflict();
+        ma(function () {
+
+            ma(".main").UIPageScrolling({
+                sectionsControl: ".page-control__item",
+                captureTouch: true
+
+            });
+        })
+        ma(document).ready(function () {
+            ma('#pizza_menu_active').addClass('activepage');
+        })
+    </script>
+
+    <script src="js/jssor.slider-21.1.6.min.js"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideoTransitions = [
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 1000, x: -257, y: -5, o: 1 }],
+              [{ b: 480, d: 520, x: 120, y: -270 }],
+              [{ b: 1000, d: 500, y: 250 }, { b: 8000, d: 1000, x: 600 }],
+              [{ b: -1, d: 1, o: -1, sX: -0.6, sY: -0.6 }, { b: 1500, d: 500, o: 1, r: 360, sX: 0.6, sY: 0.6 }, { b: 8000, d: 1000, y: -150 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 2000, d: 1000, o: 1, tZ: 200 }, { b: 3000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 3000, d: 1000, o: 1, tZ: 200 }, { b: 4000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 4000, d: 1000, o: 1, tZ: 200 }, { b: 5000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 5000, d: 1000, o: 1, tZ: 200 }, { b: 6000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 6000, d: 1000, o: 1, tZ: 200 }, { b: 7000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 7000, d: 1000, o: 1, tZ: 200 }, { b: 8000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 5000, d: 1000, y: 100 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 1000, d: 1000, o: 1 }, { b: 5000, d: 1000, y: 280 }],
+              [{ b: 2000, d: 1000, y: 190, e: { y: 28 } }, { b: 5000, d: 1000, x: 280 }],
+              [{ b: 3000, d: 520, y: 50 }, { b: 5000, d: 1000, y: -50 }],
+              [{ b: 3520, d: 480, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4000, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4500, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 10000, d: 500, y: 90 }],
+              [{ b: -1, d: 1, c: { x: 150.0, t: -150.0 } }, { b: 1000, d: 1000, c: { x: -150.0, t: 150.0 } }, { b: 10000, d: 500, c: { y: 150.0, m: -150.0 } }],
+              [{ b: 2000, d: 500, x: 220 }],
+              [{ b: 3500, d: 500, rX: -20 }, { b: 4000, d: 1000, rX: 40 }, { b: 5000, d: 500, rX: -10 }, { b: 9500, d: 500, o: -1 }],
+              [{ b: 3500, d: 2000, r: 360 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, y: -80, o: 1 }],
+              [{ b: -1, d: 1, c: { x: 120.0, t: -120.0 } }, { b: 6100, d: 400, c: { x: -120.0, t: 120.0 } }, { b: 10000, d: 500, y: -120 }],
+              [{ b: 6500, d: 500, x: 220 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 7000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 8000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 8000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 9000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9500, d: 500, o: -1, r: 180, sX: 9, sY: 9 }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideEasing: $Jease$.$InOutSine,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions,
+                    $Breaks: [
+                      [{ d: 3000, b: 8000, t: 2 }],
+                      [{ d: 2000, b: 5000 }],
+                      [{ d: 3000, b: 9500, t: 2 }]
+                    ]
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        .bgform {
+            background: url('images/aboutbg.jpg') no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            height: 700px !important;
+        }
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/color/default.css" />
+    <link href="Slider/css/custom.css" rel="stylesheet" />
+    <link href="Slider/css/style.css" rel="stylesheet" />
+    
+    <script src="Slider/js/modernizr.custom.79639.js"></script>
+    
+    <link href="Main/UIPageScrolling.css" rel="stylesheet" />
+    <!-- Menu Comes Down While Remove the css -->
+    <link rel="shortcut icon" href="img/favicon(7).ico" />
+    <title>Menu | PS Delicacies</title>
+    <link href="assets/Menu_css/component.css" rel="stylesheet" />
+    <link href="assets/Menu_css/default.css" rel="stylesheet" />
+    <script src="assets/Menu_js/modernizr.custom.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        p {
+            font-family: ubunturegular !important;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        html, .page {
+            font-family: ubunturegular !important;
+            width: auto !important;
+            height: auto !important;
+        }
+
+        .bgform {
+            background: url('images/aboutbg.jpg') no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            height: 700px !important;
+        }
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('img/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+        .grid figure img{
+            width:100%;
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            #jssor_1 {
+                top: -35px !important;
+            }
+        }
+    </style>
+</head>
+<body class="page " style="background: url('images/bg-cc.jpg');">
+    <div class="preloader"></div>
+    
+<script src="../js/jquery-latest.js"></script>
+<style type="text/css">
+    /* Importing Amaranth Font for menu text */
+    @import url(http://fonts.googleapis.com/css?family=Amaranth);
+
+    header, a, img, li {
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari and Chrome */
+        -o-transition: all 1s; /* Opera */
+    }
+
+        img.logo {
+            float: left;
+        }
+    nav {
+        margin: 0 auto;
+    }
+
+    section.stretch {
+        float: left;
+        width: 100%;
+    }
+
+
+
+    header {
+        background-color: transparent;
+        float: left;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+
+        header li {
+            margin-right: 30px;
+        }
+
+        /* Sizes for the bigger menu */
+        header.large {
+            height: 120px;
+        }
+
+        header.small ul {
+            position: relative;
+            top: 0;
+        }
+
+        header.large img {
+            /*width: 489px;
+                height: 113px;*/
+        }
+
+        header.large li {
+            /*top: -55px;*/
+        }
+
+
+        /* Sizes for the smaller menu */
+        header.small {
+            height: 80px;
+            background: rgba(0,0,0,0.8);
+        }
+
+            header.small img {
+                width: 125px;
+            }
+
+            header.small .on img {
+                width: 50px;
+                /*height: 69px;*/
+                margin-top: -15px;
+            }
+
+            header.small li {
+                /*top: -25px;*/
+            }
+
+                header.small li a {
+                    font-size: 14px !important;
+                }
+
+    ul#mob_navs {
+        background-color: #ed3237;
+        transition: all .5s;
+        border-radius:50px;
+        color:#f8be2a;
+    }
+
+
+        ul#mob_navs a {
+            font-size: 18px;
+            color: #ed3237;
+            transition: all .5s;
+        }
+
+            ul#mob_navs a:hover {
+                background-color: #ed3237;
+                color: #f8be2a !important;
+                transform: scale(1.3);
+            }
+</style>
+
+<script type="text/javascript">
+    var sma = jQuery.noConflict();
+
+    sma(document).on("scroll", function () {
+        if (sma(document).scrollTop() > 100) {
+            sma("header").removeClass("large").addClass("small");
+        }
+        else {
+            sma("header").removeClass("small").addClass("large");
+        }
+    });
+</script>
+
+<header class="main-header style-one large">
+    <!-- Header Top -->
+    
+    
+    <!-- Search Box -->
+
+
+    <!-- Header Lower -->
+    <nav>
+        <div class="header-lower">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="../Default.aspx">
+                        <img src="img/logo.png" width="160" alt="Bulldozer" title="Bulldozer"></a>
+                </div>
+                
+                <!--Right Container-->
+                <div class="right-cont clearfix">
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix erasorfont padding-r-xs-none">
+                            <ul class="nav navbar-nav navbar-right" style="margin: 0 !important">
+                                
+                                <li class=""><a href="../Default.aspx" id="home_active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                                <li class=""><a href="../AboutUs.aspx" id="about_active"><i class="fa fa-eercast" aria-hidden="true"></i>About Us</a></li>
+                                <li><a href="../psmenu.aspx" id="pizza_menu_active"><i class="fa fa-list-alt" aria-hidden="true"></i>Menu</a></li>
+                                
+                                <li class=""><a href="../Highlights.aspx" id="highlights_active"><i class="fa fa-star" aria-hidden="true"></i>Highlights</a></li>
+                                <li class=""><a href="../HappyMoments.aspx" id="happymoments_active"><i class="fa fa-smile-o" aria-hidden="true"></i>Happy Moments</a>
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                </li>
+                                
+                                
+                                <li><a href="../ContactUs.aspx" id="contactus_active"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+
+            </div>
+
+        </div>
+       
+    </nav>
+</header>
+<ul id="mob_navs" data-open="close" data-close="Open" class="hidden-lg hidden-md hidden-sm">
+    <li><a href="../ContactUs.aspx"><i class="fa fa-map-marker"></i></a></li>
+    <li><a href="../Menu.aspx"><i class="fa fa-list-alt"></i></a></li>
+    <li><a href="../HappyMoments.aspx"><i class="fa fa-smile-o"></i></a></li>
+    <li><a href="../review_order.aspx"><i class="fa fa-shopping-cart"></i></a></li>
+    <li><a href="../Default.aspx"><i class="fa fa-home"></i></a></li>
+</ul>
+<script src="../js/jquery.js"></script>
+<script>
+    $(".preloader").bind({
+        ajaxStart: function () { $(this).show(); },
+        ajaxStop: function () { $(this).hide(); }
+    });
+
+    var jqueryObj = $;
+    jqueryObj(function () {
+        var ul = jqueryObj("#mob_navs"), li = jqueryObj("#mob_navs li"), i = li.length, n = i - 1, r = 120;
+        ul.click(function () {
+            jqueryObj(this).toggleClass('active');
+            if (jqueryObj(this).hasClass('active')) {
+                for (var a = 0; a < i; a++) {
+                    li.eq(a).css({
+                        'transition-delay': "" + (50 * a) + "ms",
+                        '-webkit-transition-delay': "" + (50 * a) + "ms",
+                        'left': (-r * Math.cos(90 / n * a * (Math.PI / 180))),
+                        'top': (-r * Math.sin(90 / n * a * (Math.PI / 180)))
+                    });
+                }
+            } else {
+                li.removeAttr('style');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+    
+    <section class="item" id="SectionTemp2">
+
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: -120px; left: 0px; width: 1920px; height: 1100px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position: absolute; display: block; background: url('img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            </div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1920px; height: 1000px; overflow: hidden;">
+                <div data-b="0" data-p="170.00" data-po="80% 55%">
+                    <img data-u="image" src="images/Menu-Banner-1.jpg" />
+                </div>
+
+                <div data-b="1" data-p="170.00" style="display: none;">
+                    <img data-u="image" src="images/Menu-Banner-2.jpg" />
+
+                </div>
+                <div data-b="0" data-p="170.00" data-po="80% 55%">
+                    <img data-u="image" src="images/Menu-Banner-3.jpg" />
+
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="bottom: 16px; right: 16px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width: 16px; height: 16px;"></div>
+                </div>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora22l" style="top: 370px; left: 10px; width: 40px; height: 58px;" data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora22r" style="top: 370px; right: 10px; width: 40px; height: 58px;" data-autocenter="2"></span>
+            </div>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();</script>
+    </section>
+    
+   
+    <div class="container-fluid padding-none-xs padding-none-sm">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <h2 class="title line-title text-center">Our Delicious Menu<i class="fa fa-square"></i></h2>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cs-style-3 padding-none">
+                    
+
+                    <ul class="grid cs-style-3 padding-none">
+                        
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Appetizers</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=30'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Beverages</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=32'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Extras</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=33'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Pasta</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=34'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Pizza</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=35'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Signature Pizza</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=36'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Addition To Pizza</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=37'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Dessert</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=38'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Salad</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=39'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                                <li>
+                                    <figure>
+                                        <img src='images/No-image.jpg' alt="img04" />
+                                        
+                                        <figcaption>
+                                            
+                                            <h3>Toppings</h3>
+                                            
+                                            <a href='submenu.aspx?SubGroupId=40'>Take a look</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <section class="item padding-none-xs " style="height: auto !important; padding-top: 55px;">
+            
+<style>
+    footer{
+         font-family: 'ubunturegular',Raleway,sans-serif;
+    }
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        footer#footer ul {
+            margin: 0;
+            padding: 0;
+            zoom: 1;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+</style>
+<footer id="footer" style="color: #fff !important;" class="padding-none-xs padding-none-sm">
+    <div class="footer-info" style="color: #fff !important;">
+       
+        <div class="container">
+            <div class="pull-left" style="width: 100%; padding-top: 50px;">
+               
+                               
+                                
+                                
+                                
+                                
+                           
+                
+                
+                
+               
+               
+                               
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright margin-t-0-xs margin-b-20 text-center-xs">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 footerdivide">
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    Copyright &copy; 2018 <a href="#">P'S Delicacies</a>. All Rights Reserved.
+                </p>
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.facebook.com/PSdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-facebook-f "></i></a>
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.instagram.com/psdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-instagram"></i></a>
+                </p>
+                <p style="color: #fff !important;" class="float-right float-none-xs">
+                    Developed By <a href="http://www.gatisofttech.com/" target="_blank">Gatisofttech</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+        </section>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<!-- For loader -->
+
+
+<script src="js/jquery.touchSwipe.js"></script>
+<script>
+
+    var trying = jQuery.noConflict();
+    trying(document).ready(function () {
+        var height_window = $(window).height();
+        trying("#fw_al_003").css("max-height", height_window);
+        trying("#jssor_1").css("max-height", height_window);
+        trying("#services").css("height", height_window);
+        trying("#video_096").css("max-height", height_window);
+        trying("#fw_il_016").css("max-height", height_window);
+        trying("#fw_il_016").css("height", height_window);
+        trying("#video_096_img").css("max-height", height_window);
+        trying("#video_096_img").css("height", height_window);
+        //trying("#position_giving_temp1").css("position", "fixed");
+        //trying("#position_giving_temp1").css("bottom", "200px");
+        trying(".fw_al_003_slide > a").css("position", "relative");
+        if ($(window).width() <= 1400) {
+            trying(".fw_al_003_slide > a").css("bottom", "20px");
+        } else {
+            trying(".fw_al_003_slide > a").css("bottom", "-200px");
+        }
+        if ($(window).width() <= 980) {
+            //alert("hello");
+            $('#mainUiPage').contents().unwrap();
+            $('section').css("top", "");
+            $('#services').css("height", "");
+            //$('.services500-sm').css("height", "500px");
+            $('.navbar-collapse.collapse').css("display", "none !Important");
+        }
+        if ($(window).width() >= 768 && $(window).width() <= 980) {
+            $('.services500-sm').css("height", "500px");
+        }
+
+    })
+
+</script>
+<script src="assets/Menu_js/toucheffects.js"></script>
+</html>
+

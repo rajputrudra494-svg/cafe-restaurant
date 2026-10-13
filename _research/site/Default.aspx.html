@@ -1,0 +1,1320 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <style>
+        /*#right {
+            position: absolute;
+            top: 2000px;
+        }
+
+        #video1 {
+            position: absolute;
+            left: 2000px;
+            top: 2000px;
+        }
+
+        #video2 {
+            position: absolute;
+            left: 2000px;
+            top: 3000px;
+        }*/
+
+        .explore {
+            border: 1px solid #fff;
+            padding: 10px;
+            color: #fff !important;
+            transition: all ease-in-out 0.3s;
+        }
+
+            .explore:hover {
+                background-color: #fff;
+                color: #000 !important;
+            }
+
+        .our-projects .filter-tabs li {
+            color: #202e31;
+            cursor: pointer;
+            float: left;
+            font-family: "Raleway",sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            margin: 0 8px 8px 0;
+            padding: 4px 25px;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .about p {
+            font-size: 15px !important;
+            text-align: center !important;
+        }
+
+        .our-projects .filter-tabs li::before {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border: 1px solid #f1f1f1;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: -1px;
+            transform: skewX(-15deg);
+            width: 100%;
+            z-index: 0;
+        }
+
+        .our-projects .filter-tabs li:hover::before, .our-projects .filter-tabs li.active::before {
+            background: #ec6e6e none repeat scroll 0 0;
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .our-projects .filter-tabs li:hover, .our-projects .filter-tabs li.active {
+            color: #ffffff;
+        }
+
+        .our-projects .filter-tabs li .btn-txt {
+            position: relative;
+            z-index: 1;
+        }
+
+        .our-projects .projects-container {
+            position: relative;
+        }
+
+        .our-projects .project-box {
+            display: none;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.7s ease 0s;
+            width: 25%;
+        }
+
+            .our-projects .project-box .image {
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+
+                .our-projects .project-box .image img {
+                    display: block;
+                    height: auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .our-projects .project-box .image .zoom-icon {
+                    background: rgba(32, 46, 49, 0.85) url("../images/icons/icon-plus.png") no-repeat scroll center 40%;
+                    height: 100%;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: -100%;
+                    transition: all 700ms ease 0s;
+                    width: 100%;
+                    z-index: 1;
+                }
+
+            .our-projects .project-box:hover .image .zoom-icon {
+                opacity: 1;
+                top: 0;
+            }
+
+            .our-projects .project-box .text-content {
+                background: #ffffff none repeat scroll 0 0;
+                border-top: 4px solid #ec6e6e;
+                bottom: -20%;
+                height: 42%;
+                left: 0;
+                padding: 0 30px;
+                position: absolute;
+                text-align: right;
+                transform: skewY(-19deg);
+                width: 100.5%;
+                z-index: 5;
+            }
+
+        .our-projects.style-two .project-box .text-content {
+            background: rgba(255, 255, 255, 0.95) none repeat scroll 0 0;
+            bottom: -1px;
+            height: auto;
+            left: -33px;
+            padding: 22px 40px 22px 64px;
+            text-align: left;
+            transform: skewX(35deg);
+            width: 100%;
+        }
+
+            .our-projects.style-two .project-box .text-content.hvr-bounce-to-bottom::before {
+                background: #ec6e6e none repeat scroll 0 0;
+            }
+
+            .our-projects.style-two .project-box .text-content:hover .text {
+                color: #ffffff;
+            }
+
+        .our-projects .project-box .text-content .text {
+            color: #b9b9b9;
+            position: relative;
+            top: -10px;
+            transform: skewY(19deg);
+        }
+
+        .our-projects.style-two .project-box .text-content .text {
+            top: 0;
+            transform: skewX(-35deg);
+        }
+
+        .our-projects .project-box .text-content .text h4 {
+            color: #202e31;
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .footer-info button, .footer-info button:hover {
+            background-color: #ED3237 !important;
+        }
+
+            .footer-info button:before, .footer-info .social li a.hvr-rectangle-out:before, .hvr-rectangle-out:before, .hvr-rectangle-out:before, .gallery-meta .sharethis .sharethis-icon, .navbar-toggle:focus .icon-bar {
+                background-color: #ED3237 !important;
+            }
+    </style>
+    <link href="css/plug.css" rel="stylesheet" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/vendor/flickity.pkgd.min.js"></script>
+    
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+   
+    <style>
+        iframe .bkgrnd {
+            background-color: transparent !important;
+        }
+
+        .iframeAlign {
+            width: 1000px !important;
+            height: 1000px !important;
+        }
+    </style>
+    <script src="js/jssor.slider-21.1.6.min.js"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideoTransitions = [
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 1000, x: -257, y: -5, o: 1 }],
+              [{ b: 480, d: 520, x: 120, y: -270 }],
+              [{ b: 1000, d: 500, y: 250 }, { b: 8000, d: 1000, x: 600 }],
+              [{ b: -1, d: 1, o: -1, sX: -0.6, sY: -0.6 }, { b: 1500, d: 500, o: 1, r: 360, sX: 0.6, sY: 0.6 }, { b: 8000, d: 1000, y: -150 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 2000, d: 1000, o: 1, tZ: 200 }, { b: 3000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 3000, d: 1000, o: 1, tZ: 200 }, { b: 4000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 4000, d: 1000, o: 1, tZ: 200 }, { b: 5000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 5000, d: 1000, o: 1, tZ: 200 }, { b: 6000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 6000, d: 1000, o: 1, tZ: 200 }, { b: 7000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, o: -1, tZ: -200 }, { b: 7000, d: 1000, o: 1, tZ: 200 }, { b: 8000, d: 1000, o: -1, tZ: 200 }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 5000, d: 1000, y: 100 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 1000, d: 1000, o: 1 }, { b: 5000, d: 1000, y: 280 }],
+              [{ b: 2000, d: 1000, y: 190, e: { y: 28 } }, { b: 5000, d: 1000, x: 280 }],
+              [{ b: 3000, d: 520, y: 50 }, { b: 5000, d: 1000, y: -50 }],
+              [{ b: 3520, d: 480, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4000, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: 4500, d: 500, x: -400 }, { b: 5000, d: 800, x: 400, e: { x: 7 } }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 1000, c: { x: -250.0, t: 250.0 } }, { b: 10000, d: 500, y: 90 }],
+              [{ b: -1, d: 1, c: { x: 150.0, t: -150.0 } }, { b: 1000, d: 1000, c: { x: -150.0, t: 150.0 } }, { b: 10000, d: 500, c: { y: 150.0, m: -150.0 } }],
+              [{ b: 2000, d: 500, x: 220 }],
+              [{ b: 3500, d: 500, rX: -20 }, { b: 4000, d: 1000, rX: 40 }, { b: 5000, d: 500, rX: -10 }, { b: 9500, d: 500, o: -1 }],
+              [{ b: 3500, d: 2000, r: 360 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: 47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -47, y: 65, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, x: -76, y: -25, o: 1 }],
+              [{ b: -1, d: 1, o: -1 }, { b: 2500, d: 500, y: -80, o: 1 }],
+              [{ b: -1, d: 1, c: { x: 120.0, t: -120.0 } }, { b: 6100, d: 400, c: { x: -120.0, t: 120.0 } }, { b: 10000, d: 500, y: -120 }],
+              [{ b: 6500, d: 500, x: 220 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 7000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 8000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 8000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9000, d: 500, o: -1, r: 180, sX: 9, sY: 9 }],
+              [{ b: -1, d: 1, o: -1, r: 180, sX: -0.5, sY: -0.5 }, { b: 9000, d: 500, o: 1, r: 180, sX: 0.5, sY: 0.5 }, { b: 9500, d: 500, o: -1, r: 180, sX: 9, sY: 9 }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideEasing: $Jease$.$InOutSine,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions,
+                    $Breaks: [
+                      [{ d: 3000, b: 8000, t: 2 }],
+                      [{ d: 2000, b: 5000 }],
+                      [{ d: 3000, b: 9500, t: 2 }]
+                    ]
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        .bgform {
+            background: url('images/aboutbg.jpg') no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            height: 700px !important;
+        }
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('img/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora22l {
+            background-position: -10px -31px;
+        }
+
+        .jssora22r {
+            background-position: -70px -31px;
+        }
+
+        .jssora22l:hover {
+            background-position: -130px -31px;
+        }
+
+        .jssora22r:hover {
+            background-position: -190px -31px;
+        }
+
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px;
+        }
+
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px;
+        }
+
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var scr = jQuery.noConflict();
+        scr(function () {
+            scr('#scrollToBottom').bind("click", function () {
+                scr('html, body, main').animate({ scrollTop: 830 }, 600);
+                return false;
+            });
+            scr('#scrollToTop').bind("click", function () {
+                scr('html, body').animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/nivo-slider.css" />
+    <link rel="stylesheet" href="assets/css/flickity.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/color/default.css" />
+    <link href="socialmedia/css/style.css" rel="stylesheet" />
+    <link href="socialmedia/css/pluginstyle.css" rel="stylesheet" />
+    <link href="socialmedia/css/fontello.css" rel="stylesheet" />
+    
+    
+    
+    <link href="Slider/css/custom.css" rel="stylesheet" />
+    <link href="Slider/css/style.css" rel="stylesheet" />
+    
+    <script src="Slider/js/modernizr.custom.79639.js"></script>
+    <link href="Main/style.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="img/favicon(7).ico" />
+    <title>Home | PS Delicacies</title>
+    <script>
+        var jQTemp = jQuery.noConflict();
+        function Temp1() {
+
+            jQTemp('#Temp1').attr("class", "page-control__item ui-page-scrolling-control");
+            jQTemp('#Temp2').attr("class", "page-control__item Temp2 ui-page-scrolling-control ui-page-scrolling-control_active");
+            jQTemp('#SectionTemp2').attr("class", "item standart ui-page-scrolling-section ui-page-scrolling-section_active");
+            //jQTemp('#SectionTemp1').attr("class", "item Main_screen ui-page-scrolling-section");
+            jQTemp('#mainUiPage').attr("style", "transform: translate3d(0%, -100%, 0px); transition: all 2000ms ease;");
+
+
+            //jQTemp("header").removeClass("large").addClass("small");
+        }
+    </script>
+    <style>
+        .slick-next slick-arrow:before,
+        .slick-prev slick-arrow:before {
+            color: red !important;
+        }
+    </style>
+</head>
+<body class="page " style="background: url('images/bg-cc.jpg');">
+    <div class="preloader"></div>
+    
+<script src="../js/jquery-latest.js"></script>
+<style type="text/css">
+    /* Importing Amaranth Font for menu text */
+    @import url(http://fonts.googleapis.com/css?family=Amaranth);
+
+    header, a, img, li {
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari and Chrome */
+        -o-transition: all 1s; /* Opera */
+    }
+
+        img.logo {
+            float: left;
+        }
+    nav {
+        margin: 0 auto;
+    }
+
+    section.stretch {
+        float: left;
+        width: 100%;
+    }
+
+
+
+    header {
+        background-color: transparent;
+        float: left;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+
+
+        header li {
+            margin-right: 30px;
+        }
+
+        /* Sizes for the bigger menu */
+        header.large {
+            height: 120px;
+        }
+
+        header.small ul {
+            position: relative;
+            top: 0;
+        }
+
+        header.large img {
+            /*width: 489px;
+                height: 113px;*/
+        }
+
+        header.large li {
+            /*top: -55px;*/
+        }
+
+
+        /* Sizes for the smaller menu */
+        header.small {
+            height: 80px;
+            background: rgba(0,0,0,0.8);
+        }
+
+            header.small img {
+                width: 125px;
+            }
+
+            header.small .on img {
+                width: 50px;
+                /*height: 69px;*/
+                margin-top: -15px;
+            }
+
+            header.small li {
+                /*top: -25px;*/
+            }
+
+                header.small li a {
+                    font-size: 14px !important;
+                }
+
+    ul#mob_navs {
+        background-color: #ed3237;
+        transition: all .5s;
+        border-radius:50px;
+        color:#f8be2a;
+    }
+
+
+        ul#mob_navs a {
+            font-size: 18px;
+            color: #ed3237;
+            transition: all .5s;
+        }
+
+            ul#mob_navs a:hover {
+                background-color: #ed3237;
+                color: #f8be2a !important;
+                transform: scale(1.3);
+            }
+</style>
+
+<script type="text/javascript">
+    var sma = jQuery.noConflict();
+
+    sma(document).on("scroll", function () {
+        if (sma(document).scrollTop() > 100) {
+            sma("header").removeClass("large").addClass("small");
+        }
+        else {
+            sma("header").removeClass("small").addClass("large");
+        }
+    });
+</script>
+
+<header class="main-header style-one large">
+    <!-- Header Top -->
+    
+    
+    <!-- Search Box -->
+
+
+    <!-- Header Lower -->
+    <nav>
+        <div class="header-lower">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="../Default.aspx">
+                        <img src="img/logo.png" width="160" alt="Bulldozer" title="Bulldozer"></a>
+                </div>
+                
+                <!--Right Container-->
+                <div class="right-cont clearfix">
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix erasorfont padding-r-xs-none">
+                            <ul class="nav navbar-nav navbar-right" style="margin: 0 !important">
+                                
+                                <li class=""><a href="../Default.aspx" id="home_active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                                <li class=""><a href="../AboutUs.aspx" id="about_active"><i class="fa fa-eercast" aria-hidden="true"></i>About Us</a></li>
+                                <li><a href="../psmenu.aspx" id="pizza_menu_active"><i class="fa fa-list-alt" aria-hidden="true"></i>Menu</a></li>
+                                
+                                <li class=""><a href="../Highlights.aspx" id="highlights_active"><i class="fa fa-star" aria-hidden="true"></i>Highlights</a></li>
+                                <li class=""><a href="../HappyMoments.aspx" id="happymoments_active"><i class="fa fa-smile-o" aria-hidden="true"></i>Happy Moments</a>
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                </li>
+                                
+                                
+                                <li><a href="../ContactUs.aspx" id="contactus_active"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+
+            </div>
+
+        </div>
+       
+    </nav>
+</header>
+<ul id="mob_navs" data-open="close" data-close="Open" class="hidden-lg hidden-md hidden-sm">
+    <li><a href="../ContactUs.aspx"><i class="fa fa-map-marker"></i></a></li>
+    <li><a href="../Menu.aspx"><i class="fa fa-list-alt"></i></a></li>
+    <li><a href="../HappyMoments.aspx"><i class="fa fa-smile-o"></i></a></li>
+    <li><a href="../review_order.aspx"><i class="fa fa-shopping-cart"></i></a></li>
+    <li><a href="../Default.aspx"><i class="fa fa-home"></i></a></li>
+</ul>
+<script src="../js/jquery.js"></script>
+<script>
+    $(".preloader").bind({
+        ajaxStart: function () { $(this).show(); },
+        ajaxStop: function () { $(this).hide(); }
+    });
+
+    var jqueryObj = $;
+    jqueryObj(function () {
+        var ul = jqueryObj("#mob_navs"), li = jqueryObj("#mob_navs li"), i = li.length, n = i - 1, r = 120;
+        ul.click(function () {
+            jqueryObj(this).toggleClass('active');
+            if (jqueryObj(this).hasClass('active')) {
+                for (var a = 0; a < i; a++) {
+                    li.eq(a).css({
+                        'transition-delay': "" + (50 * a) + "ms",
+                        '-webkit-transition-delay': "" + (50 * a) + "ms",
+                        'left': (-r * Math.cos(90 / n * a * (Math.PI / 180))),
+                        'top': (-r * Math.sin(90 / n * a * (Math.PI / 180)))
+                    });
+                }
+            } else {
+                li.removeAttr('style');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+   
+        
+        
+        
+        
+    </ul>
+    
+    <div class="main" id="mainUiPage">
+        
+        <section class="item stretch" id="SectionTemp1">
+            <div class="carousel ps_control_bsquare ps_easeInOut ps_fade swipe_x" data-duration="3000" data-interval="4000" data-pause="hover" data-ride="carousel" id="fw_al_003">
+                <div class="carousel-inner" role="listbox">
+                    
+                            <div class="item active">
+                                <img alt="fw_al_003_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/BannerImage/7fe5d39d-0ca2-4735-bb4f-5a9a4169e8ce.jpg' />
+                                <div class="overlayImg"></div>
+                                <div class="fw_al_003_slide">
+                                    <h1 data-animation="animated fadeInDown">Delicious pizzas with the perfection of each topping</h1>
+                                    <p data-animation="animated fadeIn"></p>
+                                    <a class="hidden-xs hidden-sm" href="#" data-animation="animated fadeInUp" onclick="Temp1();" id="position_giving_temp1" style="animation: 2s ease 0s normal none infinite running bounce;"><i class="fa fa-arrow-down"></i></a>
+                                </div>
+                            </div>
+                        
+                            <div class="item ">
+                                <img alt="fw_al_003_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/BannerImage/c0518875-c28d-4ff4-81ae-c91e1fdeb261.jpg' />
+                                <div class="overlayImg"></div>
+                                <div class="fw_al_003_slide">
+                                    <h1 data-animation="animated fadeInDown">Cheese so good that melts in your mouth</h1>
+                                    <p data-animation="animated fadeIn"></p>
+                                    <a class="hidden-xs hidden-sm" href="#" data-animation="animated fadeInUp" onclick="Temp1();" id="position_giving_temp1" style="animation: 2s ease 0s normal none infinite running bounce;"><i class="fa fa-arrow-down"></i></a>
+                                </div>
+                            </div>
+                        
+                            <div class="item ">
+                                <img alt="fw_al_003_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/BannerImage/445cc2c4-bd75-492a-a112-6ecc086990cc.jpg' />
+                                <div class="overlayImg"></div>
+                                <div class="fw_al_003_slide">
+                                    <h1 data-animation="animated fadeInDown">Pizzas that talk to your taste buds</h1>
+                                    <p data-animation="animated fadeIn"></p>
+                                    <a class="hidden-xs hidden-sm" href="#" data-animation="animated fadeInUp" onclick="Temp1();" id="position_giving_temp1" style="animation: 2s ease 0s normal none infinite running bounce;"><i class="fa fa-arrow-down"></i></a>
+                                </div>
+                            </div>
+                        
+                    
+                </div>
+                <a href="#fw_al_003" class="carousel-control left" data-slide="prev" role="button"><span class="fa fa-angle-left" aria-hidden="true"></span><span class="sr-only">Previous</span> </a><a href="#fw_al_003" class="carousel-control right" data-slide="next" role="button"><span class="fa fa-angle-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+            </div>
+            
+        </section>
+        
+        
+        
+        
+        <section id="latest" class="section latest padding-15-xs"
+            style="background-position: right top; background-repeat: no-repeat; height: 700px;">
+            <div class="container padding-none-xs padding-none-sm" style="padding-top: 150px;">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 hidden-xs"></div>
+                    <div class="col-sm-8 ">
+                        <h2 class="title line-title text-center">About P'S Delicacies<i class="fa fa-square"></i>
+                        </h2>
+                        <ul class="posts_list about">
+
+
+                            <p>Starting out in 2013 with its first Pizza store in Bardoli, Gujarat, P'S Delicacies is an innovative pure vegetarian concept that has emerged as popular brand offering amazing flavour combinations in authentic Italian cuisine. With an extensive menu offering flavourful delights, a unique recipe for pizza and passion for good food, this humble eatery has lived up to is name since the very beginning. This has made P'S Delicacies the go-to place for pizza lovers in the region with loyal customers travelling miles just to have a slice of their favourite pizza.</p>
+
+
+                            <li>
+                                
+                                <aside>
+                                    
+                                    
+                                </aside>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 hidden-xs"></div>
+                </div>
+            </div>
+
+            <a href="../AboutUs.aspx" data-animation="animated fadeInUp" class="explore" style="animation: 2s ease 0s normal none infinite running bounce;">Explore</a>
+
+        </section>
+
+
+        
+        
+        
+        
+        <section class="item">
+            <section id="services" class="section services services500-sm"
+                style="background-image: url(../images/About-ingredients-Home-page.jpg); background-repeat: no-repeat; background-position: center top; background-size: 100% 100%;">
+                <div class="container servicedots">
+                    <!-- 
+					<ul class="service-effect">
+						<li><img alt="" src="../images/home/services/service-1.png"  class="animated animation-duration-15" data-animate="fadeInLeft animation"></li>
+						<li><img alt="" src="../images/home/services/service-2.png"  class="animated animation-duration-15" data-animate="fadeInDown animation"></li>
+						<li><img alt="" src="../images/home/services/service-3.png"  class="animated animation-duration-15" data-animate="fadeInDown animation"></li>
+						<li><img alt="" src="../images/home/services/service-4.png"  class="animated animation-duration-15" data-animate="fadeInDown animation"></li>
+						<li><img alt="" src="../images/home/services/service-5.png"  class="animated animation-duration-15" data-animate="fadeInDown animation"></li>
+						<li><img alt="" src="../images/home/services/service-6.png"  class="animated animation-duration-15" data-animate="fadeInRight animation"></li>
+					</ul> -->
+                    <ul id="services-item" class="margin-t-55-xs">
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#coffee" title="Coffee">Olive</a>
+                                    </h3>
+                                    <p>
+                                        The savory sourness of the black olives adds a delight to the pizza, while making the pieces an adornment to the pizza appearance. 
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#cocktail" title="Cocktail">Jalapeno</a>
+                                    </h3>
+                                    <p>
+                                        The tangy sour taste of Japapeno creates a great flavor combination and makes
+your pizza visually appealing.
+
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-50"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#tea" title="Tea">Seasoning</a>
+                                    </h3>
+                                    <p>
+                                        You need to season the pizzas to appeasing your taste, with those essential spices & herbs and spices like crushed or powdered garlic, fennel etc enhancing that extra bit of your pizza.
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-100"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#cake" title="Cake">Sauces</a>
+                                    </h3>
+                                    <p>
+                                        AN assortment of sauces, bringing in delectable taste variances, will make your tastebuds alive.
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-150"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#milk" title="Milk">Vegetables</a>
+                                    </h3>
+                                    <p>
+                                        The fresh, healthy, vegetables like red & green bell peppers, onions, broccoli, and many more, bring in their distinctive tatses, along with the multiple nutrients, like vitamins & minerals.
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-200"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h3>
+                                        <a href="menu.html#beverages" title="Beverages">Cheese</a>
+                                    </h3>
+                                    <p>
+                                        The yummy mouth watering, vareity of cheese, with amazing & authetic taste cannot be felt unless tasted. 
+                                    </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-250"></em>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        
+        <section class="item">
+            <section class="news-area padding-tb-20-xs padding-none-sm">
+                <div class="auto-container">
+
+                    <h2 class="title line-title text-center" style="color: #fff">Our Menu<i class="fa fa-square"></i>
+                    </h2>
+                    <div class="carousel ps_easeOutCirc slide swipe_x team_089 team_089_control_button four_coloumns padding-none-xs"
+                        data-duration="2000" data-interval="3000" data-pause="hover" data-ride="carousel" id="team_089_mov_1_col_4">
+
+                        <div class="carousel-inner" role="listbox">
+                            
+                                    <div class="item active">
+                                        <div class="col-xs-12 team_089_grid col-sm-6 col-md-3">
+                                            <div class="team_089_wrapper">
+                                                <div class="team_089_image">
+                                                    <img alt="team_088_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/ItemImage/1b535262-f404-4726-8eb5-33c6039ccb3f.png'><ul>
+                                                        <ul>
+                                                            <li class="margin-r-5"></li>
+                                                            
+
+                                                            
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="team_089_content team_089_content_col_4">
+                                                    <h5>
+                                                        <a href="#">
+                                                            <span id="lstOurMenu_lblItemGroup_0">Alfredo</span>
+                                                        </a>
+                                                    </h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="item ">
+                                        <div class="col-xs-12 team_089_grid col-sm-6 col-md-3">
+                                            <div class="team_089_wrapper">
+                                                <div class="team_089_image">
+                                                    <img alt="team_088_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/ItemImage/53fc2212-1dec-40f0-83ff-fc845ef5da50.png'><ul>
+                                                        <ul>
+                                                            <li class="margin-r-5"></li>
+                                                            
+
+                                                            
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="team_089_content team_089_content_col_4">
+                                                    <h5>
+                                                        <a href="#">
+                                                            <span id="lstOurMenu_lblItemGroup_1">Cheese lovers</span>
+                                                        </a>
+                                                    </h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="item ">
+                                        <div class="col-xs-12 team_089_grid col-sm-6 col-md-3">
+                                            <div class="team_089_wrapper">
+                                                <div class="team_089_image">
+                                                    <img alt="team_088_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/ItemImage/2277420f-4086-402f-8c50-4bd7d7b21a9c.png'><ul>
+                                                        <ul>
+                                                            <li class="margin-r-5"></li>
+                                                            
+
+                                                            
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="team_089_content team_089_content_col_4">
+                                                    <h5>
+                                                        <a href="#">
+                                                            <span id="lstOurMenu_lblItemGroup_2">P’s pasta</span>
+                                                        </a>
+                                                    </h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="item ">
+                                        <div class="col-xs-12 team_089_grid col-sm-6 col-md-3">
+                                            <div class="team_089_wrapper">
+                                                <div class="team_089_image">
+                                                    <img alt="team_088_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/ItemImage/873b8a15-87a2-42f6-8a84-d1fad11a8bab.png'><ul>
+                                                        <ul>
+                                                            <li class="margin-r-5"></li>
+                                                            
+
+                                                            
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="team_089_content team_089_content_col_4">
+                                                    <h5>
+                                                        <a href="#">
+                                                            <span id="lstOurMenu_lblItemGroup_3">Ps Exotica</span>
+                                                        </a>
+                                                    </h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="item ">
+                                        <div class="col-xs-12 team_089_grid col-sm-6 col-md-3">
+                                            <div class="team_089_wrapper">
+                                                <div class="team_089_image">
+                                                    <img alt="team_088_01" src='http://websr.gatisofttech.in/CompanyImages/PSDC/ItemImage/32516dfe-a61c-4be0-9e97-d12c50178609.png'><ul>
+                                                        <ul>
+                                                            <li class="margin-r-5"></li>
+                                                            
+
+                                                            
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="team_089_content team_089_content_col_4">
+                                                    <h5>
+                                                        <a href="#">
+                                                            <span id="lstOurMenu_lblItemGroup_4">Spicy sausage pizza</span>
+                                                        </a>
+                                                    </h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+
+                            
+                        </div>
+                        <a href="#team_089_mov_1_col_4" class="carousel-control left" data-slide="prev" role="button">
+                            <span class="fa fa-angle-left"></span></a>
+                        <a href="#team_089_mov_1_col_4" class="carousel-control right" data-slide="next" role="button">
+                            <span class="fa fa-angle-right"></span></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section class="item" id="SectionTemp2">
+            
+            
+            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 1100px; overflow: hidden; visibility: hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    <div style="position: absolute; display: block; background: url('img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1920px; height: 1000px; overflow: hidden;">
+                    <div data-b="0" data-p="170.00" data-po="80% 55%" data-idle="50">
+                        <img data-u="image" src="Slider/images/bnr9.jpg" />
+                        <!-- Image Overlay -->
+                        
+                    </div>
+                    
+                    <div data-b="1" data-p="170.00" style="display: none;" data-idle="50">
+                        <img data-u="image" src="Slider/images/bnr10.jpg" />
+                        <!-- Image Overlay -->
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb05" style="bottom: 16px; right: 16px;" data-autocenter="1">
+                        <!-- bullet navigator item prototype -->
+                        <div data-u="prototype" style="width: 16px; height: 16px;"></div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <span data-u="arrowleft" class="jssora22l" style="top: 370px; left: 10px; width: 40px; height: 58px;" data-autocenter="2"></span>
+                    <span data-u="arrowright" class="jssora22r" style="top: 370px; right: 10px; width: 40px; height: 58px;" data-autocenter="2"></span>
+                </div>
+            </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+        </section>
+        
+        
+        
+        
+        
+        <section class="item" style="background-position: center center;">
+            <section class="testimonials-area padding-none-xs padding-none-sm">
+                <div class="auto-container clearfix">
+                    <h2 class="title line-title text-center">TESTI<span>MONIALS</span><i class="fa fa-square"></i></h2>
+
+                    <div class="icon-quote"><span class="fa fa-quote-left"></span></div>
+                    <!--Slider-->
+                    <ul class="slider">
+                        <li class="slide-item">Impressive and tongue savoring pizza. My first visit here and tried paneer chilly pizza LG(12"). Taste is awesome, preparations are nice and the rates are at par with branded chains. No fluffy or hard crust complaint, the
+                            <br />
+                            quality and taste is impressive, considering the non-branded outlet.</li>
+                        <li class="slide-item">This restaurant is good for Italian food lovers. Food qualities are awesome and services also acceptable. Nice<br />
+                            garlic bread. It is definitely best pizza compare to international brand. We are from Surat but best, tasty
+                            <br />
+                            and fresh pizza and starter like garlic bread, pasta, etc. served in that place whenever.</li>
+                    </ul>
+
+                    <!--Custom-Pager-->
+                    <div class="testimonials_div float-left text-center padding-t-20">
+                        <div class="custom-pager clearfix" style="">
+
+                            <a href="#" class="pager-item" data-slide-index="0">
+                                <span class="testi-thumb">
+                                    <img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt="" title=""></span>
+                                <strong>Ankit Sharma</strong>
+                            </a>
+                            <a href="#" class="pager-item" data-slide-index="1">
+                                <span class="testi-thumb">
+                                    <img class="img-circle" src="images/resource/testi-thumb-2.jpg" alt="" title=""></span>
+                                <strong>Jay Dhanani</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            
+        </section>
+        
+        
+        <section class="item padding-none-xs" style="height: auto !important; padding-top: 55px;">
+            
+<style>
+    footer{
+         font-family: 'ubunturegular',Raleway,sans-serif;
+    }
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        footer#footer ul {
+            margin: 0;
+            padding: 0;
+            zoom: 1;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+</style>
+<footer id="footer" style="color: #fff !important;" class="padding-none-xs padding-none-sm">
+    <div class="footer-info" style="color: #fff !important;">
+       
+        <div class="container">
+            <div class="pull-left" style="width: 100%; padding-top: 50px;">
+               
+                               
+                                
+                                
+                                
+                                
+                           
+                
+                
+                
+               
+               
+                               
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright margin-t-0-xs margin-b-20 text-center-xs">
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 footerdivide">
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    Copyright &copy; 2018 <a href="#">P'S Delicacies</a>. All Rights Reserved.
+                </p>
+                <p style="color: #fff !important;" class="float-left float-none-xs">
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.facebook.com/PSdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-facebook-f "></i></a>
+                    <a style="color: #000;PADDING: 4PX 10PX;MARGIN-RIGHT: 5px;margin-left: 5px;" href="https://www.instagram.com/psdelicacies/" class="hvr-rectangle-out" target="_blank" style="color: #000;"><i class="fa fa-instagram"></i></a>
+                </p>
+                <p style="color: #fff !important;" class="float-right float-none-xs">
+                    Developed By <a href="http://www.gatisofttech.com/" target="_blank">Gatisofttech</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+        </section>
+    </div>
+</body>
+
+<script src="socialmedia/js/jquery-1.11.2.min.js"></script>
+
+
+<script src="socialmedia/js/jquery.appear.js"></script>
+<!--<script src="js/device.min.js"></script>-->
+<!--<script src="js/jquery.browser.min.js"></script>-->
+<!--<script src="js/tablesaw.js"></script>-->
+<!--<script src="owl/owl.carousel.min.js"></script>-->
+<script src="socialmedia/js/moment.min.js"></script>
+<script src="socialmedia/js/codebird.js"></script>
+<script src="socialmedia/js/social-widgets/social-widgets.js"></script>
+
+<script src="socialmedia/js/ct-mediaSection/jquery.stellar.min.js"></script>
+<script src="socialmedia/js/main.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/revolution.min.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+
+<script src="Slider/js/jquery.ba-cond.min.js"></script>
+<script src="Slider/js/jquery.slitslider.js"></script>
+<script type="text/javascript">
+    var sl = jQuery.noConflict();
+    sl(function () {
+
+        var Page = (function () {
+
+            var slnavArrows = sl('#nav-arrows'),
+                slnav = sl('#nav-dots > span'),
+                slitslider = sl('#slider').slitslider({
+                    onBeforeChange: function (slide, pos) {
+
+                        slnav.removeClass('nav-dot-current');
+                        slnav.eq(pos).addClass('nav-dot-current');
+
+                    }
+                }),
+
+                init = function () {
+
+                    initEvents();
+
+                },
+                initEvents = function () {
+
+                    // add navigation events
+                    slnavArrows.children(':last').on('click', function () {
+
+                        slitslider.next();
+                        return false;
+
+                    });
+
+                    slnavArrows.children(':first').on('click', function () {
+
+                        slitslider.previous();
+                        return false;
+
+                    });
+
+                    slnav.each(function (i) {
+
+                        sl(this).on('click', function (event) {
+
+                            var sldot = sl(this);
+
+                            if (!slitslider.isActive()) {
+
+                                slnav.removeClass('nav-dot-current');
+                                sldot.addClass('nav-dot-current');
+
+                            }
+
+                            slitslider.jump(i + 1);
+                            return false;
+
+                        });
+
+                    });
+
+                };
+
+            return { init: init };
+
+        })();
+
+        Page.init();
+
+        /**
+         * Notes: 
+         * 
+         * example how to add items:
+         */
+
+        /*
+        
+        var slitems  = sl('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+        
+        // call the plugin's add method
+        ss.add(slitems);
+
+        */
+
+    });
+</script>
+
+<script src="js/jquery.inview.min.js"></script>
+
+
+<script src="js/jquery.touchSwipe.js"></script>
+<script src="js/plugin.min.js"></script>
+<script>
+    var trying = jQuery.noConflict();
+    trying(document).ready(function () {
+        var height_window = $(window).height();
+        trying("#fw_al_003").css("max-height", height_window);
+        trying("#jssor_1").css("max-height", height_window);
+        trying("#services").css("height", height_window);
+        trying("#video_096").css("max-height", height_window);
+        trying("#fw_il_016").css("max-height", height_window);
+        trying("#fw_il_016").css("height", height_window);
+        trying("#video_096_img").css("max-height", height_window);
+        trying("#video_096_img").css("height", height_window);
+        //trying("#position_giving_temp1").css("position", "fixed");
+        //trying("#position_giving_temp1").css("bottom", "200px");
+        trying(".fw_al_003_slide > a").css("position", "relative");
+        if ($(window).width() <= 1400) {
+            trying(".fw_al_003_slide > a").css("bottom", "20px");
+        } else {
+            trying(".fw_al_003_slide > a").css("bottom", "-200px");
+        }
+        if ($(window).width() <= 980) {
+            //alert("hello");
+            $('#mainUiPage').contents().unwrap();
+            $('section').css("top", "");
+            $('#services').css("height", "");
+            //$('.services500-sm').css("height", "500px");
+            $('.navbar-collapse.collapse').css("display", "none !Important");
+        }
+        if ($(window).width() >= 768 && $(window).width() <= 980) {
+            $('.services500-sm').css("height", "500px");
+        }
+
+    })
+    trying(document).ready(function () {
+        trying('#home_active').addClass('activepage');
+    })
+
+</script>
+</html>
+

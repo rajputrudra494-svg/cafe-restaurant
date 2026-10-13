@@ -1,0 +1,37 @@
+[
+ {
+  "GroupId": 18,
+  "GroupName": "Appetizers",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 19,
+  "GroupName": "Pasta",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 20,
+  "GroupName": "Salad",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 21,
+  "GroupName": "Pizza",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 22,
+  "GroupName": "Toppings",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 23,
+  "GroupName": "Extras",
+  "GroupImage": null
+ },
+ {
+  "GroupId": 24,
+  "GroupName": "Beverages",
+  "GroupImage": null
+ }
+]

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en" class="has-motion">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P'S Delicacies — Italian-style veg pizza in Bardoli &amp; Surat</title>
+<meta name="description" content="Pure-veg Italian-style pizza from a specialised oven. Baked in Bardoli since 2013, now in Vesu, Surat. 143 things on the menu, 10″ to 16″, Jain on request.">
+<meta name="theme-color" content="#1b1716">
+<meta property="og:title" content="P'S Delicacies — pizzas that talk to your taste buds">
+<meta property="og:description" content="Pure-veg Italian-style pizza. Bardoli since 2013, now in Vesu, Surat.">
+<meta property="og:type" content="restaurant">
+<meta property="og:image" content="assets/img/hero-peel.webp">
+<link rel="icon" href="assets/brand/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=Caveat:wght@500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="assets/img/cut-peel.webp">
+<script>
+  // the loader only belongs on the first page of a visit
+  try {
+    if (sessionStorage.getItem('ps-seen')) document.documentElement.classList.add('seen');
+    if (sessionStorage.getItem('ps-transition')) {
+      document.documentElement.classList.add('transitioning', 'seen');
+      sessionStorage.removeItem('ps-transition');
+    }
+  } catch (e) {}
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "P'S Delicacies",
+  "servesCuisine": ["Pizza", "Italian", "Vegetarian"],
+  "priceRange": "₹₹",
+  "image": "assets/img/hero-peel.webp",
+  "telephone": "+91-95372-46200",
+  "email": "palskits14u@gmail.com",
+  "foundingDate": "2013",
+  "sameAs": ["https://www.instagram.com/psdelicacies/", "https://www.facebook.com/PSdelicacies"],
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. G-3, International Wealth Center, VIP Road, Vesu",
+      "addressLocality": "Surat",
+      "addressRegion": "Gujarat",
+      "postalCode": "395007",
+      "addressCountry": "IN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "52-59 Suken Residency, Baben",
+      "addressLocality": "Bardoli",
+      "addressRegion": "Gujarat",
+      "postalCode": "394601",
+      "addressCountry": "IN"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="loader" aria-hidden="true">
+  <img class="loader__mark" src="assets/brand/mark.svg" alt="">
+  <p class="loader__note">firing up the oven…</p>
+</div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark"></span></div>
+
+<header class="nav" data-nav>
+  <a class="nav__logo" href="index.html" aria-label="P'S Delicacies, home">
+    <img class="nav__mark" src="assets/brand/mark.svg" alt="" width="42" height="42">
+    <img class="nav__word" src="assets/brand/wordmark.svg" alt="P'S Delicacies" width="150" height="14">
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="builder.html">Build your own</a>
+    <a href="story.html">Our story</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <a class="nav__call" href="tel:+919537246200">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.2 1l-2.3 2.1Z"/></svg>
+    <span>95372 46200</span>
+  </a>
+  <button class="nav__burger" type="button" data-burger aria-expanded="false" aria-label="Open menu" aria-controls="drawer"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" data-drawer aria-hidden="true">
+  <nav aria-label="Menu">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="builder.html">Build your own</a>
+    <a href="story.html">Our story</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+919537246200">95372 46200</a>
+    <a href="tel:+918980918008">89809 18008</a>
+    <a href="mailto:palskits14u@gmail.com">palskits14u@gmail.com</a>
+    <span>Vesu, Surat · Baben, Bardoli</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ------------------------------------------------------------- hero -->
+  <section class="hero dark" data-hero data-intro>
+    <svg class="steel" data-grid="soft" aria-hidden="true"></svg>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--light" data-hero-fade>Bardoli since 2013 · now in Vesu, Surat</p>
+        <h1 class="hero__title" data-split>
+          <span class="line">Pizzas that talk</span>
+          <span class="line">to your <em>taste buds</em></span>
+        </h1>
+        <p class="hero__lede" data-hero-fade>Pure veg, Italian style, baked in a specialised oven with a few things we still import. Not your regular pizza, not trying to be either.</p>
+        <div class="hero__ctas" data-hero-fade>
+          <a class="btn btn--red" href="menu.html" data-magnetic>See the full menu</a>
+          <a class="btn btn--ghost" href="builder.html">Build your own</a>
+        </div>
+      </div>
+
+      <div class="hero__stage">
+        <div class="pizza3d" data-pizza3d role="img" aria-label="A P'S Delicacies pizza on a wooden peel. Drag to spin it.">
+          <img class="pizza3d__fallback" src="assets/img/cut-peel.webp" alt="A pizza on a wooden peel with one slice pulled away" width="988" height="1101">
+        </div>
+        <p class="scribble scribble--a" data-hero-fade>
+          <svg viewBox="0 0 90 60" aria-hidden="true"><path d="M4 54c10-26 32-44 60-46"/><path d="M50 4l14 4-6 13"/></svg>
+          <span>drag it,<br>go on</span>
+        </p>
+        <p class="scribble scribble--b" data-hero-fade>
+          <span>scroll to pull<br>a slice out</span>
+          <svg viewBox="0 0 90 60" aria-hidden="true"><path d="M6 6c22 2 44 20 56 46"/><path d="M48 50l14 4 2-14"/></svg>
+        </p>
+        <p class="hero__tag" data-hero-fade>
+          <b>8 slices · 16″</b>
+          <small>enough for the whole table</small>
+        </p>
+      </div>
+    </div>
+
+    <div class="hero__foot">
+      <dl class="stats">
+        <div><dt data-count="2013" data-from="1998">2013</dt><dd>first store, Bardoli</dd></div>
+        <div><dt data-count="143">143</dt><dd>things on the menu</dd></div>
+        <div><dt data-count="2">2</dt><dd>kitchens, two cities</dd></div>
+        <div><dt>100%</dt><dd>pure vegetarian</dd></div>
+      </dl>
+      <p class="hero__scroll">Scroll <span aria-hidden="true"></span></p>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------- marquee -->
+  <div class="marquee" aria-hidden="true" data-marquee>
+    <div class="marquee__track">
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>CHEESE SO GOOD IT MELTS IN YOUR MOUTH</span><i></i>
+      <span>PURE VEG</span><i></i>
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>JAIN ON REQUEST</span><i></i>
+      <span>BARDOLI · SURAT</span><i></i>
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>CHEESE SO GOOD IT MELTS IN YOUR MOUTH</span><i></i>
+      <span>PURE VEG</span><i></i>
+      <span>HOT…HOT…HOT…!!!</span><i></i>
+      <span>JAIN ON REQUEST</span><i></i>
+      <span>BARDOLI · SURAT</span><i></i>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------------------ story -->
+  <section class="section concrete has-emboss">
+    <div class="emboss" aria-hidden="true"><div class="emboss__word"></div></div>
+    <div class="wrap">
+      <div class="split split--top">
+        <div>
+          <p class="eyebrow">Where it started</p>
+          <h2 class="h2" data-split>
+            <span class="line">Two people, one oven,</span>
+            <span class="line">a town called <em>Bardoli</em></span>
+          </h2>
+          <div class="body-copy intro-copy" data-reveal>
+            <p>In 2013 Mr Prashant Patel and his wife came home from Canada with an idea that sounded slightly mad for a small Gujarat town: proper Italian-style pizza, pure vegetarian, no shortcuts. One specialised oven, a short menu, a lot of cheese.</p>
+            <p>The town turned up. The menu grew to 143 things. Then the pizza moved to Surat as well — same dough, same oven routine, a bigger room with a red steel ceiling.</p>
+          </div>
+          <div class="teaser-stats" data-stagger>
+            <div><b>13 yrs</b><span>of baking</span></div>
+            <div><b>38</b><span>signature pies</span></div>
+            <div><b>36</b><span>extra toppings</span></div>
+          </div>
+          <a class="link-arrow" href="story.html">Read the whole story <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="media-stack">
+          <div class="sticker--round" data-reveal="pop" data-rot="-12">Pure<b>Veg</b>always</div>
+          <div class="photo photo--main" data-parallax="7">
+            <img src="assets/img/peel-mozzarella.webp" srcset="assets/img/peel-mozzarella-sm.webp 640w, assets/img/peel-mozzarella.webp 1920w" sizes="(max-width: 900px) 92vw, 46vw" alt="A fresh pizza on a wooden peel, mozzarella still melting" width="1920" height="1080" loading="lazy">
+          </div>
+          <figure class="polaroid" data-reveal="pop" data-rot="5">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="assets/img/stuffed-bread-sm.webp" alt="Stuffed garlic bread, pulled open" width="900" height="469" loading="lazy">
+            <figcaption>the garlic bread, obviously</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------- signatures -->
+  <section class="sig dark" id="signatures" data-sig>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow eyebrow--light">The regulars order these</p>
+          <h2 class="h2 h2--light" data-split><span class="line">Signatures</span></h2>
+        </div>
+        <p class="script">prices are for the whole pie — pick a size and watch it move</p>
+      </div>
+    </div>
+
+    <div class="sig__viewport">
+      <div class="sig__track" data-sig-track>
+
+        <article class="dish" data-dish data-prices="590,750,860,1020">
+          <div class="dish__plate"><img src="assets/img/cut-alfredo.webp" alt="Alfredo pizza" width="748" height="764" loading="lazy"></div>
+          <div class="dish__body">
+            <p class="dish__kicker"><span class="jain">Jain on request</span> · white sauce</p>
+            <h3>Alfredo</h3>
+            <p class="dish__desc">Our white-sauce pie. Alfredo base instead of tomato, mozzarella, herbs, and nothing else fighting for attention.</p>
+            <div class="dish__foot">
+              <div class="sizes" role="group" aria-label="Pick a size"></div>
+              <p class="price">₹<span data-price>750</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish" data-dish data-prices="530,640,790,960">
+          <div class="dish__plate"><img src="assets/img/cut-cheese-lovers.webp" alt="Cheese Lovers pizza" width="838" height="836" loading="lazy"></div>
+          <div class="dish__body">
+            <p class="dish__kicker"><span class="jain">Jain on request</span> · classic</p>
+            <h3>Cheese Lovers</h3>
+            <p class="dish__desc">The one the tagline is about. Sauce, a great deal of mozzarella, oregano. Cheese so good it melts in your mouth.</p>
+            <div class="dish__foot">
+              <div class="sizes" role="group" aria-label="Pick a size"></div>
+              <p class="price">₹<span data-price>640</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish" data-dish data-prices="630,740,860,1030">
+          <div class="dish__plate"><img src="assets/img/cut-exotica.webp" alt="P's Exotica pizza" width="844" height="808" loading="lazy"></div>
+          <div class="dish__body">
+            <p class="dish__kicker"><span class="jain">Jain on request</span> · house favourite</p>
+            <h3>P's Exotica</h3>
+            <p class="dish__desc">Everything exotic we can get our hands on, on one base. Peppers, corn, olives, jalapeños, the lot.</p>
+            <div class="dish__foot">
+              <div class="sizes" role="group" aria-label="Pick a size"></div>
+              <p class="price">₹<span data-price>740</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish" data-dish data-prices="690,820,940,1120">
+          <div class="dish__plate"><img src="assets/img/cut-spicy-sausage.webp" alt="Smokey Barbeque pizza" width="830" height="824" loading="lazy"></div>
+          <div class="dish__body">
+            <p class="dish__kicker"><span class="spicy">Spicy</span> · smoked barbeque</p>
+            <h3>Smokey Barbeque</h3>
+            <p class="dish__desc">Barbeque sauce, spicy veg sausage, onion. Smoky, loud, and the reason we keep the chilli flakes on the counter.</p>
+            <div class="dish__foot">
+              <div class="sizes" role="group" aria-label="Pick a size"></div>
+              <p class="price">₹<span data-price>820</span></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish">
+          <div class="dish__plate"><img src="assets/img/cut-ps-pasta.webp" alt="P's Pasta" width="798" height="796" loading="lazy"></div>
+          <div class="dish__body">
+            <p class="dish__kicker"><span class="jain">Jain on request</span> · from the pasta pan</p>
+            <h3>P's Pasta</h3>
+            <p class="dish__desc">Not a pizza, still a regular. Our own sauce, finished in the pan, and the one thing people order “on the side” and then fight over.</p>
+            <div class="dish__foot">
+              <p class="dish__one">one size, one skillet</p>
+              <p class="price">₹340</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish dish--end">
+          <p class="script">there are 141 more where these came from</p>
+          <p>Thirty-eight signature pies, nine classics, pasta, garlic breads, salads, dips and a fridge full of cold drinks.</p>
+          <a class="btn btn--red" href="menu.html">Open the full menu</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------ photo strip -->
+  <section class="strip dark">
+    <div class="strip__row" data-strip>
+      <figure><img src="assets/img/hero-peel.webp" srcset="assets/img/hero-peel-sm.webp 640w, assets/img/hero-peel.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="A whole pizza on a wooden peel" width="1920" height="1080" loading="lazy"><figcaption>straight out, still ticking</figcaption></figure>
+      <figure><img src="assets/img/garlic-bread.webp" srcset="assets/img/garlic-bread-sm.webp 640w, assets/img/garlic-bread.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="Garlic bread with cheese" width="1440" height="720" loading="lazy"><figcaption>garlic bread, with cheese</figcaption></figure>
+      <figure><img src="assets/img/veg-split.webp" srcset="assets/img/veg-split-sm.webp 640w, assets/img/veg-split.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="A pizza cut in half, vegetables showing" width="1440" height="720" loading="lazy"><figcaption>half for you, half for later</figcaption></figure>
+      <figure><img src="assets/img/pasta-skillet.webp" srcset="assets/img/pasta-skillet-sm.webp 640w, assets/img/pasta-skillet.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="Pasta in a skillet" width="1920" height="1080" loading="lazy"><figcaption>the pasta pan</figcaption></figure>
+      <figure><img src="assets/img/olive-pineapple.webp" srcset="assets/img/olive-pineapple-sm.webp 640w, assets/img/olive-pineapple.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="Pizza with olives and pineapple" width="1920" height="1000" loading="lazy"><figcaption>olives and pineapple, no arguments</figcaption></figure>
+      <figure><img src="assets/img/paper-pizza.webp" srcset="assets/img/paper-pizza-sm.webp 640w, assets/img/paper-pizza.webp 1920w" sizes="(max-width: 640px) 74vw, 30vw" alt="A slice on paper" width="1920" height="1000" loading="lazy"><figcaption>HOT…HOT…HOT…!!!</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------- reviews -->
+  <section class="section section--tight concrete">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">What people say</p>
+          <h2 class="h2" data-split><span class="line">Straight off</span><span class="line">our own wall</span></h2>
+        </div>
+        <p class="script">two of the reviews we keep on the site</p>
+      </div>
+
+      <div class="reviews" data-stagger>
+        <figure class="quote">
+          <blockquote>Had the paneer chilli pizza, 12 inch. The crust was neither too fluffy nor too hard — exactly right — and it is priced like the big chains but tastes like someone cared.</blockquote>
+          <figcaption><b>Ankit Sharma</b><br>on the 12″ Paneer Chilli</figcaption>
+        </figure>
+        <figure class="quote quote--tilt">
+          <blockquote>I came from Surat for this. Pizza, garlic bread, pasta — all fresh, and better than the international brands I keep paying more for.</blockquote>
+          <figcaption><b>Jay Dhanani</b><br>before we opened in Surat</figcaption>
+        </figure>
+        <div class="rating">
+          <p class="eyebrow eyebrow--light">On Instagram</p>
+          <p class="rating__num"><b>2.9k</b><span>following along</span></p>
+          <p>Tag <a href="https://www.instagram.com/psdelicacies/" rel="noopener" target="_blank">@psdelicacies</a> and your slice might end up on the wall.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------ tiles -->
+  <section class="section section--tight dark">
+    <div class="wrap">
+      <div class="tiles" data-stagger>
+        <a class="tile" href="menu.html">
+          <img src="assets/img/paper-pizza-sm.webp" alt="" width="900" height="469" loading="lazy">
+          <span class="tile__go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p class="eyebrow eyebrow--light">143 items</p>
+          <h3>The full menu</h3>
+          <p>Search it, filter it for Jain or spicy, see all four sizes at once.</p>
+        </a>
+        <a class="tile" href="builder.html">
+          <img src="assets/img/peel-mozzarella-sm.webp" alt="" width="900" height="506" loading="lazy">
+          <span class="tile__go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p class="eyebrow eyebrow--light">Your pie, your rules</p>
+          <h3>Build your own</h3>
+          <p>Pick a size, a crust and as many toppings as you dare. The price adds up live.</p>
+        </a>
+        <a class="tile" href="visit.html">
+          <img src="assets/ig/ig01.webp" alt="" width="512" height="640" loading="lazy">
+          <span class="tile__go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p class="eyebrow eyebrow--light">Two kitchens</p>
+          <h3>Come and sit</h3>
+          <p>Vesu in Surat, Baben in Bardoli. Maps, numbers, and how to find us.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <p class="foot__big">Hungry<br><em>yet?</em></p>
+        <div class="hero__ctas">
+          <a class="btn btn--red" href="tel:+919537246200" data-magnetic>Call 95372 46200</a>
+          <a class="btn btn--ghost" href="visit.html">Find the store</a>
+        </div>
+      </div>
+      <div class="foot__cols">
+        <div>
+          <h4>Eat</h4>
+          <a href="menu.html">Full menu</a>
+          <a href="builder.html">Build your own</a>
+          <a href="menu.html#appetizers">Garlic breads</a>
+          <a href="menu.html#pasta">Pasta</a>
+        </div>
+        <div>
+          <h4>Us</h4>
+          <a href="story.html">Our story</a>
+          <a href="story.html#moments">Happy moments</a>
+          <a href="visit.html">Visit</a>
+          <a href="visit.html#faq">Questions</a>
+        </div>
+        <div>
+          <h4>Say hello</h4>
+          <a href="tel:+919537246200">95372 46200</a>
+          <a href="tel:+918980918008">89809 18008</a>
+          <a href="mailto:palskits14u@gmail.com">palskits14u@gmail.com</a>
+          <a href="https://www.instagram.com/psdelicacies/" rel="noopener" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/PSdelicacies" rel="noopener" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot__wall" aria-hidden="true">
+      <div class="emboss emboss--dark"><div class="emboss__word"></div></div>
+    </div>
+    <div class="foot__base">
+      <span>© <span data-year>2026</span> P'S Delicacies · Baben, Bardoli &amp; Vesu, Surat · pure vegetarian</span>
+      <span class="script">call ahead for timings, we pick up</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/pizza3d.js"></script>
+</body>
+</html>
